@@ -1,0 +1,27 @@
+function akttPostTweet() {
+	var tweet_field = $('aktt_tweet_text');
+	var tweet_text = tweet_field.value;
+	if (tweet_text == '') {
+		return;
+	}
+	var tweet_msg = $("aktt_tweet_posted_msg");
+	var akttAjax = new Ajax.Updater(
+		tweet_msg,
+		"http://www.golkar.or.id/ver2.0/blog/index.php",
+		{
+			method: "post",
+			parameters: "ak_action=aktt_post_tweet_sidebar&aktt_tweet_text=" + tweet_text,
+			onComplete: akttSetReset
+		}
+	);
+	tweet_field.value = '';
+	tweet_field.focus();
+	$('aktt_char_count').innerHTML = '';
+	tweet_msg.style.display = 'block';
+}
+function akttSetReset() {
+	setTimeout('akttReset();', 2000);
+}
+function akttReset() {
+	$('aktt_tweet_posted_msg').style.display = 'none';
+}

@@ -1,0 +1,847 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" >
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>beranda | golkar.or.id</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+try { if (undefined == xajax.config) xajax.config = {}; } catch (e) { xajax = {}; xajax.config = {}; };
+xajax.config.requestURI = "http://www.golkar.or.id?q=/frontpage";
+xajax.config.statusMessages = false;
+xajax.config.waitCursor = true;
+xajax.config.version = "xajax 0.5";
+xajax.config.legacy = false;
+xajax.config.defaultMode = "asynchronous";
+xajax.config.defaultMethod = "POST";
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.golkar.or.id/sites/all/modules/vitzo_xajax/inc/xajax_js/xajax_core.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+window.setTimeout(
+ function() {
+  var scriptExists = false;
+  try { if (xajax.isLoaded) scriptExists = true; }
+  catch (e) {}
+  if (!scriptExists) {
+   alert("Error: the xajax Javascript component could not be included. Perhaps the URL is incorrect?\nURL: http://www.golkar.or.id/sites/all/modules/vitzo_xajax/inc/xajax_js/xajax_core.js");
+  }
+ }, 2000);
+/* ]]> */
+</script>
+
+<script type='text/javascript' charset='UTF-8'>
+/* <![CDATA[ */
+xajax_select_list_kontak = function() { return xajax.request( { xjxfun: 'select_list_kontak' }, { parameters: arguments } ); };
+xajax_list_anggota_dewan = function() { return xajax.request( { xjxfun: 'list_anggota_dewan' }, { parameters: arguments } ); };
+xajax_cari_anggota_dewan = function() { return xajax.request( { xjxfun: 'cari_anggota_dewan' }, { parameters: arguments } ); };
+xajax_detail_anggota_dewan = function() { return xajax.request( { xjxfun: 'detail_anggota_dewan' }, { parameters: arguments } ); };
+/* ]]> */
+</script>
+
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?6" />
+<link type="text/css" rel="stylesheet" media="all" href="/files/css/css_2bb4aeecd479a0696eec8453cda69aec.css" />
+    <script type="text/javascript" src="/misc/jquery.js?6"></script>
+<script type="text/javascript" src="/misc/drupal.js?6"></script>
+<script type="text/javascript" src="/misc/progress.js?6"></script>
+<script type="text/javascript" src="/files/languages/id_dc047eba08eee7d01a502bf1b69c27a1.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/custom_search/custom_search.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/nodereference_explorer/plugins/cck/nodereference/nodereference_explorer_plugin_cck_nodereference.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/nodereference_explorer/plugins/cck/link/nodereference_explorer_plugin_cck_link.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/poormanscron/poormanscron.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/user_relationships/user_relationships_ui/user_relationships_ui.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/quicktabs/js/quicktabs.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/calendar/jcalendar/jcalendar.js?6"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" }, "cron": { "basePath": "/poormanscron", "runNext": 1327593964 }, "user_relationships_ui": { "loadingimage": "/sites/all/modules/user_relationships/user_relationships_ui/images/loadingAnimation.gif", "savingimage": "/sites/all/modules/user_relationships/user_relationships_ui/images/savingimage.gif", "position": { "position": "absolute", "left": "0", "top": "0" } }, "quicktabs": { "qt_1": { "tabs": [ 0, 0 ] } } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function toggle_display() {
+		if ($("#edit-experience").val() == "Tuliskan Jika Ada") {
+			$("#edit-experience").val("");
+		}
+	}
+	toggle_display();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$.fn.showIf = function( show, arg ) {
+       return this[ show ? 'show' : 'hide' ]( arg );
+     };
+     $().ready(function() {
+       $('#edit-profile-country').change(function() {
+         var country = $(this).val();
+         $('#state').showIf( country == 'ID' );
+         $('#city').showIf( country == 'ID' );
+         $('#province').showIf( country == 'CA' );
+       }).trigger('change');
+     }); 
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var var_path = "/sites/all/modules/calendar/jcalendar";
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var var_base_path = "/";
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var var_path = "/sites/all/modules/calendar/jcalendar";
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var var_base_path = "/";
+//--><!]]>
+</script>
+    <!--[if lte IE 7]><link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/framework/ie.css" /><![endif]--> <!--If Less Than or Equal (lte) to IE 7-->
+  </head>
+  <body class="sidebar-right">
+    <!-- Layout -->
+    <div class="container"> <!-- add "showgrid" class to display grid -->
+
+      <div id="header" class="clearfix">
+
+        <!-- added by agus -->
+        <div class="wrapper">
+          <!-- added by indie for beta version label -->	
+          <p id="beta"></p>
+          <!-- end of beta version label -->
+          <p id="site"><em>www.golkar.or.id</em></p>
+          <h1><a href="/" class="float-left">Partai GOLKAR</a></h1>
+                    
+			<form action="/user" method="post" id="login">
+				<input type="hidden" name="form_build_id" id="form-bd6c65531cc840b93e5b54d01753c071" value="form-bd6c65531cc840b93e5b54d01753c071"  />
+				<input type="hidden" name="form_id" id="edit-user-login" value="user_login"  />
+				<p><a href="/user/register">Register</a></p>
+				<p class="clear-both">
+					<input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="name" />
+					<input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="password" />
+					<input type="submit" name="op" id="edit-submit" class="submit" value="Log in" />
+				</p>
+			</form>
+		          <!-- s: login form -->
+          <!--<form action="#">
+            <p><a href="#">Register</a></p>
+            <p>
+              <button type="submit">Logout</button>
+            </p>
+          </form>-->
+          <!-- e: login form -->
+          <ul class="header-menu clear-both">
+            <li><a href="/" class="menu-beranda">Beranda</a></li>
+            <li><a href="/aksi" class="menu-aksi">Aksi</a></li>
+            <li><a href="/golkarku" class="menu-golkarku">GOLKARku</a></li>
+            <li><a href="/media" class="menu-media">Media</a></li>
+            <li><a href="/tentang" class="menu-tentang">Tentang</a></li>
+          </ul>
+          		  <div id="search" class="clear-both">
+		  <form action="/?q=/frontpage"  accept-charset="UTF-8" method="post" id="search-block-form">
+<div>	<p>
+		
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Masukkan kata kunci yang ingin anda cari." class="form-text  custom-search-default-value" />
+
+		<input type="submit" name="op" id="edit-submit-1" value="Search"  class="form-submit" />
+		<input type="hidden" name="form_build_id" id="form-d340c03fa990d2af294a4ed44ba0c447" value="form-d340c03fa990d2af294a4ed44ba0c447"  />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+	</p>
+</div>
+</div></form>
+		  		  </div>
+                    <!-- / .header-menu -->
+        </div>
+        <div id="header-block" class="wrapper clear-both">
+          <div id="block-block-17" class="block block-block">
+
+  
+  <div class="content">
+        <p><img id="banner_wp" alt="Membangun Indonesia Dari Desa" src="/sites/all/themes/framework/assets/img/header-golkar-hut.jpg" class="header-block-image" /></p>
+<script>
+var idx = 0;
+function changeWPImage() {
+idx = idx == 1?0:1;
+if (idx == 0) {
+$("#banner_wp").attr("src", "/sites/all/themes/framework/assets/img/header-golkar-hut.jpg");
+} else {
+$("#banner_wp").attr("src", "/sites/all/themes/framework/assets/img/background_header-golkar2.jpg");
+}
+}
+$(document).ready(function () {
+setInterval(changeWPImage, 5000);
+});
+</script>  </div>
+
+</div>
+          <span class="clear-both display-block" style="overflow:hidden;height:0px;"></span>
+        </div>
+        <!-- / #header-block -->
+        <!-- /#added -->
+
+        
+                  <!--a href="" title="">
+            <img src="" alt="" id="logo" />
+          </a-->
+        
+        <!--div id="sitename">
+                        <h1><a href="" title=""></a></h1>
+          
+                      <span id="siteslogan"></span>
+                  </div--> <!-- /#sitename -->
+
+              </div> <!-- /#header -->
+
+      <!--div id="nav">
+                          
+         <!-- if block in $nav, overrides default $primary and $secondary links -->
+
+                                                      <!--div id="secondary-links"></div-->
+          
+              </div--> <!-- /#nav -->
+
+             
+			<span style="clear:both;overflow:hidden;height:0px;"></span>
+      <div id="main" class="wrapper">
+        <div id="content">
+                        		                                                		
+				        <div id="content-article">
+		<div class="content-block float-left">
+	    <div class="view view-news view-id-news view-display-id-block_1 view-dom-id-2">
+    
+  
+  
+      <div class="view-content">
+      <h3>Terbaru</h3>
+    <img src="http://www.golkar.or.id/files/imagecache/news-pendapat-frontpage/images/berita/2012/01/26/agung_laksono2.jpg" alt="" title=""  class="imagecache imagecache-news-pendapat-frontpage imagecache-default imagecache-news-pendapat-frontpage_default" width="299" height="188" /><h4><a href="/content/news/berita/menko-kesra-minta-elite-politik-kritik-pemerintah-secara-proporsional">Menko Kesra Minta Elite Politik Kritik Pemerintah secara Proporsional</a></h4>
+<p class="article-info">
+	<em>
+		Ditulis oleh
+		<span class="color-orange">Sang Admin</span>
+		26 Januari 2012<br />
+			</em>
+</p>
+<p><p>JAKARTA - Elite politik diminta untuk bersikap obyektif dan proporsional dalam menilai berbagai kebijakan yang dikeluarkan pemerintah. Imbauan tersebut disampaikan Wakil Ketua Umum Partai Golkar Agung Laksono.</p>
+<p>"Pemerintah tidak antikritik. Silakan saja dan kita akan mendengarkan. Tetapi kalau ada pernyataan elite-elite politik yang memanfaatkan satu mementum untuk menyesatkan opini atau bahkan memprovokasi masyarakat, maka itu yang perlu segera diluruskan," ujar Agung kepada pers di Jakarta, Kamis (26/1).</p></p>
+<br class="clear-both" />
+<p class="content-more minus-top20"><a href="/content/news/berita/menko-kesra-minta-elite-politik-kritik-pemerintah-secara-proporsional">selengkapnya</a></p>
+
+    <img src="http://www.golkar.or.id/files/imagecache/news-pendapat-frontpage/images/berita/2012/01/26/golkar1.jpg" alt="" title=""  class="imagecache imagecache-news-pendapat-frontpage imagecache-default imagecache-news-pendapat-frontpage_default" width="299" height="188" /><h4><a href="/content/news/berita/disiapkan-aturan-batasi-biaya-pendidikan-tinggi">Disiapkan, Aturan Batasi Biaya Pendidikan Tinggi</a></h4>
+<p class="article-info">
+	<em>
+		Ditulis oleh
+		<span class="color-orange">Sang Admin</span>
+		26 Januari 2012<br />
+			</em>
+</p>
+<p><p>JAKARTA - Tingginya biaya masuk Perguruan Tinggi (PT) menjadi perhatian Anggota Komisi X DPR, Zulfadhli. Ia menegaskan, saat ini Komisi X DPR tengah membahas Rancangan Undang-Undang Pendidikan Tinggi (UU Dikti). Menurut dia, di dalam RUU itu ada pasal yang mengatur standar biaya pendidikan tinggi.</p>
+<p>"Itulah mendesak UU Pendidikan Tinggi yang sekarang sedang dibahas Komisi X. Ada pasal yang mengatur standar biaya pendidikan tinggi yang menjadi pedoman bagi PT dalam menentukan biaya kuliah," kata Zulfadhli, Rabu (25/1), di Jakarta.</p></p>
+<br class="clear-both" />
+<p class="content-more minus-top20"><a href="/content/news/berita/disiapkan-aturan-batasi-biaya-pendidikan-tinggi">selengkapnya</a></p>
+
+    <img src="http://www.golkar.or.id/files/imagecache/news-pendapat-frontpage/images/berita/2012/01/26/nudirman_munir1.jpg" alt="" title=""  class="imagecache imagecache-news-pendapat-frontpage imagecache-default imagecache-news-pendapat-frontpage_default" width="299" height="188" /><h4><a href="/content/news/berita/kasus-kriminalitas-anak-selayaknya-di-luar-pengadilan">Kasus Kriminalitas Anak Selayaknya di Luar Pengadilan</a></h4>
+<p class="article-info">
+	<em>
+		Ditulis oleh
+		<span class="color-orange">Sang Admin</span>
+		26 Januari 2012<br />
+			</em>
+</p>
+<p><p>JAKARTA - Tidak semua anak yang terjerat dalam kasus pidana harus dipenjarakan. Ketegori anak nakal yang disandang bisa menjadi pisau bermata dua. </p>
+<p>Hal tersebut terungkap dalam diskusi bertajuk 'Hapuskan penjara Anak' yang diselenggarakan Komisi Perlindungan Anak Indonesia, Rabu (25/1). </p>
+<p>Hadir sebagai pembicara adalah praktisi hukum senior Todung Mulya Lubis, Anggota Komisi III DPR Nudirman Munir dan Apong Herlina selaku pemerhati anak dari KPAI.</p></p>
+<br class="clear-both" />
+<p class="content-more minus-top20"><a href="/content/news/berita/kasus-kriminalitas-anak-selayaknya-di-luar-pengadilan">selengkapnya</a></p>
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div> 	</div>
+	<div class="content-block float-right">
+		<div class="view view-news view-id-news view-display-id-block_2 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      <h3>Pendapat</h3>
+    <h4><a href="/content/news/pendapat/golkar-dalam-%E2%80%9Cpilpres-2012%E2%80%9D">Golkar dalam “Pilpres 2012”</a></h4>
+<p class="article-info">
+	<em>
+		Ditulis oleh
+		<span class="color-orange">Indra J Piliang</span>
+		24 Januari 2012<br />
+			</em>
+</p>
+<p><p>Belakangan ini muncul berita macam-macam di media massa, sehubungan dengan nama-nama yang diusung dalam pemilihan presiden RI tahun 2014-2019. Di antara sejumlah nama, terdapat Ir Aburizal Bakrie, Ketua Umum DPP Partai Golkar. Terdapat banyak informasi yang simpang siur, terkait dengan proses pencalonan yang masih panjang.</p></p>
+<br class="clear-both" />
+<p class="content-more minus-top20"><a href="/content/news/pendapat/golkar-dalam-%E2%80%9Cpilpres-2012%E2%80%9D">selengkapnya</a></p>
+
+    <h4><a href="/content/news/pendapat/membalik-metode-wacana-capres-cawapres">Membalik Metode Wacana Capres-Cawapres</a></h4>
+<p class="article-info">
+	<em>
+		Ditulis oleh
+		<span class="color-orange">Indra J Piliang</span>
+		09 Januari 2012<br />
+			</em>
+</p>
+<p><p>Terlalu banyak kata dan kalimat yang tertumpang untuk satu masalah penting dan mendasar di negara ini. Satu masalah yang semestinya membutuhkan investigasi berbulan-bulan, seperti pembunuhan dan konflik, diurai hanya berdasarkan isu.</p>
+<p>Masalah sejarah yang membutuhkan detil dokumen diperbincangkan di layar televisi dengan beragam penilaian. Informasi yang masih perlu pembuktian disampaikan sebagai “temuan” seperti “piramida” di Garut.</p></p>
+<br class="clear-both" />
+<p class="content-more minus-top20"><a href="/content/news/pendapat/membalik-metode-wacana-capres-cawapres">selengkapnya</a></p>
+
+    <h4><a href="/content/news/pendapat/subsidi-bbm-tak-terkontrol">Subsidi BBM Tak Terkontrol</a></h4>
+<p class="article-info">
+	<em>
+		Ditulis oleh
+		<span class="color-orange">Roem Kono</span>
+		09 Januari 2012<br />
+			</em>
+</p>
+<p><p>Minderheit nota (catatan keberatan) yang disampaikan oleh Fraksi Partai Golkar DPR ketika membahas subsidi bahan bakar minyak (BBM), dalam pembahasan Rencana Anggaran Pendapatan dan Belanja Negara (RAPBN) 2012 lalu, tampaknya luput dari pemberitaan media. Bahkan, pemerintah sekalipun belum terlihat mengambil langkah-langkah strategis terkait kebijakan subsidi BBM tersebut. Padahal jika dievaluasi lebih mendalam, persoalan subsidi BBM laksana bom waktu yang siap meledak kapan saja.</p></p>
+<br class="clear-both" />
+<p class="content-more minus-top20"><a href="/content/news/pendapat/subsidi-bbm-tak-terkontrol">selengkapnya</a></p>
+
+    <h4><a href="/content/news/pendapat/satu-tahun-terakhir">Satu Tahun Terakhir</a></h4>
+<p class="article-info">
+	<em>
+		Ditulis oleh
+		<span class="color-orange">Indra J Piliang</span>
+		03 Januari 2012<br />
+			</em>
+</p>
+<p><p>Bangsa yang besar ini sekarang jadi bangsa yang malang. Bukan karena kesalahan rakyatnya, melainkan akibat ketiadaan keseriusan aparatur hukum dan pemerintahan dalam menyelesaikan persoalan. Bulan Desember 2011 ini saja mengemuka persoalan lahan dan konflik di belahan Barat, tepatnya di Mesuji yang terletak di wilayah Lampung dan Sumatera Selatan.</p></p>
+<br class="clear-both" />
+<p class="content-more minus-top20"><a href="/content/news/pendapat/satu-tahun-terakhir">selengkapnya</a></p>
+
+    <h4><a href="/content/news/pendapat/memeluk-indonesia">Memeluk Indonesia</a></h4>
+<p class="article-info">
+	<em>
+		Ditulis oleh
+		<span class="color-orange">Dwie Aroem Hadiatie</span>
+		19 Desember 2011<br />
+			</em>
+</p>
+<p><p>Mendung yang menaungi Ibu Kota Jakarta dan gerimis menjelang acara perhelatan akbar kaum muda Indonesia, yaitu Deklarasi Gerakan Pelajar Mahasiswa Pembaharuan (GPMP), tak tersurutkan sedikitpun dengan kondisi alam yang ada. Itulah cerminan yang selaras dengan semangat dan jiwa pemuda yg pantang menyerah.</p></p>
+<br class="clear-both" />
+<p class="content-more minus-top20"><a href="/content/news/pendapat/memeluk-indonesia">selengkapnya</a></p>
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div> 		<div class="view view-photo-gallery view-id-photo_gallery view-display-id-block_1 view-dom-id-3">
+    
+  
+  
+      <div class="view-content">
+      <h3>Foto</h3>
+  <p class="photo-list float-left">
+<a href="http://www.golkar.or.id/fotogaleri/256">
+	<img src="http://www.golkar.or.id/files/imagecache/thumb-gallery/images/2010/10/11/ical_di_medan_2010061522.jpg" alt="" title=""  class="imagecache imagecache-thumb-gallery imagecache-default imagecache-thumb-gallery_default" width="133" height="82" /></a>
+Ketum DPP Resmi...</p>
+  <p class="photo-list float-right">
+<a href="http://www.golkar.or.id/fotogaleri/243">
+	<img src="http://www.golkar.or.id/files/imagecache/thumb-gallery/images/2010/06/28/ical_di_kongres_fkkcmi_2010053121.jpg" alt="" title=""  class="imagecache imagecache-thumb-gallery imagecache-default imagecache-thumb-gallery_default" width="133" height="82" /></a>
+Ketua Umum pada...</p>
+          <p class="photo-list float-left">
+<a href="http://www.golkar.or.id/fotogaleri/235">
+	<img src="http://www.golkar.or.id/files/imagecache/thumb-gallery/images/2010/06/24/ical_di_minsel_2010052546.jpg" alt="" title=""  class="imagecache imagecache-thumb-gallery imagecache-default imagecache-thumb-gallery_default" width="133" height="82" /></a>
+Temu kader DPD...</p>
+          <p class="photo-list float-right">
+<a href="http://www.golkar.or.id/fotogaleri/234">
+	<img src="http://www.golkar.or.id/files/imagecache/thumb-gallery/images/2010/06/24/ical_di_minsel_2010052527.jpg" alt="" title=""  class="imagecache imagecache-thumb-gallery imagecache-default imagecache-thumb-gallery_default" width="133" height="82" /></a>
+Ketua Umum di M...</p>
+                                                                                                                                            </div>
+  
+  
+  
+  
+  
+  
+</div> 	</div>
+	<div class="clear-both"><div id="quicktabs-1" class="quicktabs_wrapper quicktabs-style-golkar"><ul class="quicktabs_tabs quicktabs-style-golkar"><li class="qtab-0 active first"><a href="/frontpage?quicktabs_1=0#quicktabs-1" id="quicktabs-tab-1-0" class="qt_tab active">Wall</a></li><li class="qtab-1 last"><a href="/frontpage?quicktabs_1=1#quicktabs-1" id="quicktabs-tab-1-1" class="qt_tab active">Anggota</a></li></ul><div id="quicktabs_container_1" class="quicktabs_main quicktabs-style-golkar"><div id="quicktabs_tabpage_1_0" class="quicktabs_tabpage"><div id="block-guestbook-guestbook" class="block block-guestbook">
+
+  
+  <div class="content">
+        <div class="guestbook content-box-content clear-both"><div id="content-comment"><p class="info"><span class="float-left">Memperlihatkan <b>5</b> dari <b>433</b> komentar</span><span class="content-more float-right"><a href="/guestbook">Selengkapnya</a></span></p>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>DONT STOP KOMANDAN..................KAMU MASIH TETAP YANG TERBAIK</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar ANITAYUNDA" title="Avatar ANITAYUNDA"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">ANITA UKKAS</a></div><span class="date">25. Januari 2012 - 19:13</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>LANJUTKAN  COMANDAN</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar murni" title="Avatar murni"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">murni ati</a></div><span class="date">25. Januari 2012 - 19:03</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>DONT STOP COMANDAN...................</p>
+<p>SAYANG qKU TETAP YANG TERBAIK ................</p>
+<p>LANJUTKAN.............UNTUK RAKYAT SUL-SEL</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar murni" title="Avatar murni"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">murni ati</a></div><span class="date">25. Januari 2012 - 19:02</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>DONT STOP KOMANDAN...LANJUTKAN</p>
+<p>DONT STOP KOMANDAN...SUARA GOLKAR SUARA RAKYAT...LANJUTKAN</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar naniek" title="Avatar naniek"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Rahmadany Darwis, SE</a></div><span class="date">25. Januari 2012 - 17:35</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>gOLKAR tidak harus menunggu kapan pemimpin dilahirkan akan tetapi Golkar sudah harus melahirkan Pemimpin tentunya melalui Proses Kaderisasi</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar AMPG" title="Avatar AMPG"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">AL&amp;#039;AMIN UDUALA, S.PD</a></div><span class="date">25. Januari 2012 - 15:51</span></div><div id="bottom">&nbsp;</div>
+</div><div id="sendcomment"><div id="form"><form action="/?q=/frontpage"  accept-charset="UTF-8" method="post" id="guestbook-form-entry-form">
+<div><p class="links">&raquo; Anda harus login terlebih dahulu untuk memberi komentar.</p>
+</div></form>
+</div></div></div></div>
+  </div>
+
+</div>
+</div><div id="quicktabs_tabpage_1_1" class="quicktabs_tabpage quicktabs-hide"><div id="block-views-view_anggota_terbaru-block_1" class="block block-views">
+
+  
+  <div class="content">
+        <div class="view view-view-anggota-terbaru view-id-view_anggota_terbaru view-display-id-block_1 view-dom-id-4">
+    
+  
+  
+      <div class="view-content">
+      <div class="content-box-content clear-both">
+<p class="info">
+    <span class="float-left">Memperlihatkan <b>10</b> anggota terbaru</span>
+    <span class="content-more float-right"><a href="/anggota">Selengkapnya</a></span>
+</p>
+  <!---->
+  <div class="clear-both image">
+          <div id="user-picture"><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Asep Tedi Priatna" title="Avatar Asep Tedi Priatna"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><p>Asep Tedi Priatna</p>
+</div>
+          <div id="user-picture"><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Aris sunandar se" title="Avatar Aris sunandar se"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><p>Aris sunandar se</p>
+</div>
+          <div id="user-picture"><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar H.Aslam Madjid" title="Avatar H.Aslam Madjid"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><p>H.Aslam Madjid</p>
+</div>
+          <div id="user-picture"><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar asmawati" title="Avatar asmawati"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><p>asmawati</p>
+</div>
+          <div id="user-picture"><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Hj. syahruni" title="Avatar Hj. syahruni"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><p>Hj. syahruni</p>
+</div>
+          <div id="user-picture"><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Dra.Hj.Naisah layu" title="Avatar Dra.Hj.Naisah layu"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><p>Dra.Hj.Naisah layu</p>
+</div>
+          <div id="user-picture"><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar ANITA UKKAS" title="Avatar ANITA UKKAS"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><p>ANITA UKKAS</p>
+</div>
+          <div id="user-picture"><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar h.zulkifli ismail, sh" title="Avatar h.zulkifli ismail, sh"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><p>h.zulkifli ismail, sh</p>
+</div>
+          <div id="user-picture"><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar murni ati" title="Avatar murni ati"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><p>murni ati</p>
+</div>
+          <div id="user-picture"><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar dra.hj. masyita fauzi" title="Avatar dra.hj. masyita fauzi"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><p>dra.hj. masyita fauzi</p>
+</div>
+      </div>
+  <!--/-->
+</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+</div>
+</div></div></div></div>
+</div>
+						
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+		</div>
+					<div id="sidebar">
+			  <div id="block-block-1" class="block block-block">
+
+  
+  <div class="content">
+        <ul class="sidebar-menu">
+<li><a class="index index-brigadedigital" href="/brigade-digital">Brigade Digital</a></li>
+<li><a class="index index-kadergolkar" href="/pendaftaran">Kader GOLKAR</a></li>
+<li><a class="index index-fasilitas" href="/fasilitas">Fasilitas</a></li>
+<li><a class="index index-pers" href="/indeks/press-release">Pers</a></li>
+<li><a class="index index-acara" href="/acara">Acara</a></li>
+<li><a class="index index-fpgdpd1dpd2" href="/pages-tentang/1131">FPG DPD1/DPD2</a></li>
+</ul>
+  </div>
+
+</div>
+
+<div id="block-block-34" class="block block-block">
+			<div id="search-kontak" >
+		<a href="/kontak-wakil"><div class="head-kontak"></div></a>
+				<form name="dewan" method="get" action="/kontak-wakil" onsubmit="return false;">
+			<div id="provinsi" style="line-height:20px;">
+			<span style="font-family:Arial, Helvetica, sans-serif; font-size: 12px;">Provinsi:</span><br />
+			<select style="width:270px; font-family:Arial, Helvetica, sans-serif; font-size: 12px;" name="provinsi" onchange="xajax_select_list_kontak(this.value,'kota');"><option value="0">Pilih Provinsi</option><option value="33" >Aceh</option><option value="93" >Sumatera Utara</option><option value="35" >Sumatera Barat</option><option value="182" >Riau</option><option value="79" >Sumatera Selatan</option><option value="95" >Bengkulu</option><option value="98" >Lampung</option><option value="94" >Jambi</option><option value="97" >Kepulauan Bangka Belitung</option><option value="96" >Kepuluan Riau</option><option value="99" >Banten</option><option value="77" >Jawa Barat</option><option value="78" >DKI Jakarta</option><option value="105" >Jawa Tengah</option><option value="106" >Jawa Timur</option><option value="107" >Daerah Istimewa Yogyakarta</option><option value="161" >Bali</option><option value="165" >Nusa Tenggara Barat</option><option value="170" >Nusa Tenggara Timur</option><option value="184" >Kalimantan Barat</option><option value="187" >Kalimantan Tengah</option><option value="189" >Kalimantan Selatan</option><option value="193" >Kalimantan Timur</option><option value="197" >Sulawesi utara</option><option value="201" >Sulawesi Tengah</option><option value="205" >Sulawesi Selatan</option><option value="214" >Sulawesi Tenggara</option><option value="217" >Gorontalo</option><option value="221" >Maluku</option><option value="223" >Maluku Utara</option><option value="225" >Papua Barat</option><option value="219" >Sulawesi Barat</option></select><br />
+			</div>
+			<div id='kota' style="line-height:20px;">
+			<br />
+			</div>
+			<div id='anggota' style="line-height:20px;"></div><br />
+			<div id="cari">
+				<input id="cari_anggota" name="cari" type="text" style="border:1px solid #DEDEDE;padding:2px; width: 220px;" />
+				<input type="submit" value="Cari" style="padding:2px; background-color:#FFA101; color:#FFF; width: 40px;" onclick="xajax_cari_anggota_dewan(document.dewan.cari.value);"/>
+			</div>
+			<br /><br />
+			<div id='detail_anggota'> </div>
+		</form>
+	</div>
+	</div>
+<div id="block-views-1f7cc7f3c1041d7971ffad19613d6fb5" class="block block-views">
+
+  
+  <div class="content">
+        <div class="view view-golkar-calendar view-id-golkar_calendar view-display-id-calendar_block_1 view-dom-id-5">
+    
+  
+  
+      <div class="view-content">
+      
+<div class="calendar-calendar">
+        <div class="date-nav clear-block">
+  <div class="date-prev">
+          <span class="next"> <a href="http://www.golkar.or.id/frontpage?mini=kalendar%2F2011-12" title="Navigate to previous month" rel="nofollow">« </a></span>
+      &nbsp;</div>
+  <div class="date-heading">
+    <h3><a href="/kalendar/2012-01" title="View full page month">Januari</a></h3>
+  </div>
+  <div class="date-next">&nbsp;
+          <span class="next"> <a href="http://www.golkar.or.id/frontpage?mini=kalendar%2F2012-02" title="Navigate to next month" rel="nofollow"> »</a></span>
+      
+  </div>
+</div>
+</div>    </div>
+  
+  
+      <div class="attachment attachment-after">
+      <div class="calendar-calendar"><div class="month-view">
+ 
+<table class="mini">
+  <thead>
+    <tr>
+              <th class="days sun">
+          S        </th>
+              <th class="days mon">
+          M        </th>
+              <th class="days tue">
+          T        </th>
+              <th class="days wed">
+          W        </th>
+              <th class="days thu">
+          T        </th>
+              <th class="days fri">
+          F        </th>
+              <th class="days sat">
+          S        </th>
+          </tr>
+  </thead>
+  <tbody>
+          <tr>
+                  <td id="golkar_calendar-2012-01-01" class="sun mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-01">1</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-02" class="mon mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-02">2</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-03" class="tue mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-03">3</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-04" class="wed mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-04">4</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-05" class="thu mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-05">5</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-06" class="fri mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-06">6</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-07" class="sat mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-07">7</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td id="golkar_calendar-2012-01-08" class="sun mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-08">8</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-09" class="mon mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-09">9</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-10" class="tue mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-10">10</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-11" class="wed mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-11">11</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-12" class="thu mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-12">12</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-13" class="fri mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-13">13</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-14" class="sat mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-14">14</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td id="golkar_calendar-2012-01-15" class="sun mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-15">15</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-16" class="mon mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-16">16</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-17" class="tue mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-17">17</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-18" class="wed mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-18">18</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-19" class="thu mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-19">19</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-20" class="fri mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-20">20</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-21" class="sat mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-21">21</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td id="golkar_calendar-2012-01-22" class="sun mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-22">22</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-23" class="mon mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-23">23</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-24" class="tue mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-24">24</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-25" class="wed mini past has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-25">25</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-26" class="thu mini today has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-26">26</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-27" class="fri mini future has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-27">27</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-28" class="sat mini future has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-28">28</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td id="golkar_calendar-2012-01-29" class="sun mini future has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-29">29</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-30" class="mon mini future has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-30">30</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-01-31" class="tue mini future has-no-events">
+            <div class="month mini-day-off"> <a href="http://www.golkar.or.id/kalendar/2012-01-31">31</a> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-02-01" class="wed mini empty">
+            <div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-02-02" class="thu mini empty">
+            <div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-02-03" class="fri mini empty">
+            <div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="golkar_calendar-2012-02-04" class="sat mini empty">
+            <div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+      </tbody>
+</table>
+</div></div>    </div>
+  
+  
+  
+  
+</div>   </div>
+
+</div>
+<div id="block-views-video-block_1" class="block block-views">
+
+  
+  <div class="content">
+        <div class="view view-video view-id-video view-display-id-block_1 view-dom-id-7">
+    
+  
+  
+      <div class="view-content">
+      <h3>Video</h3>
+    <a href="/video/view/bakrie-dpr-harus-perjuangkan-kesejahteraan-rakyat"><img src="http://www.golkar.or.id/files/imagecache/thumb-video-big/video/thumbnail/2012/01/20/dewa.jpg" alt="" title=""  class="imagecache imagecache-thumb-video-big imagecache-default imagecache-thumb-video-big_default" width="282" height="191" /></a><p class="sidebar-video-text"><a href="/video/view/bakrie-dpr-harus-perjuangkan-kesejahteraan-rakyat">Bakrie: DPR Harus Perjuangkan Kesejahteraan Rakyat</a></p>    </div>
+  
+  
+      <div class="attachment attachment-after">
+      <div class="view view-video view-id-video view-display-id-attachment_1 view-dom-id-6">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="/video/view/aburizal-bakrie-di-usindo-washington-dc-7-desember-2011">Aburizal Bakrie di Usindo Washington DC, AS, 7 Desember 2011</a></span>
+  </div>
+</li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="/video/view/pidato-politik-ketua-umum-partai-golkar-menyambut-hut-ri-ke-66">Pidato Politik Ketua Umum Partai Golkar menyambut HUT RI ke-66</a></span>
+  </div>
+</li>
+          <li class="views-row views-row-3 views-row-odd views-row-last">  
+  <div class="views-field-title">
+                <span class="field-content"><a href="/video/view/golkar-siap-jadi-pengawal-pancasila">Golkar Siap Jadi Pengawal Pancasila</a></span>
+  </div>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>     </div>
+  
+  
+  
+  
+</div>   </div>
+
+</div>
+<div id="block-views-view_file_upload-block_1" class="block block-views">
+
+      <h3>Download</h3>
+  
+  <div class="content">
+        <div class="view view-view-file-upload view-id-view_file_upload view-display-id-block_1 view-dom-id-8">
+    
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+    <ul>
+          <li class="views-row views-row-1 views-row-odd views-row-first"><a href="/files/uploaded/2011/08/04/arb_koko.jpg">Foto Ketua Umum untuk alat peraga 5</a>
+</li>
+          <li class="views-row views-row-2 views-row-even"><a href="/files/uploaded/2011/08/04/arb_1.jpg">Foto Ketua Umum untuk alat peraga 4</a>
+</li>
+          <li class="views-row views-row-3 views-row-odd"><a href="/files/uploaded/2011/08/04/arb_7.jpg">Foto Ketua Umum untuk alat peraga 3</a>
+</li>
+          <li class="views-row views-row-4 views-row-even"><a href="/files/uploaded/2011/08/04/arb_4.jpg">Foto Ketua Umum untuk alat peraga 2</a>
+</li>
+          <li class="views-row views-row-5 views-row-odd views-row-last"><a href="/files/uploaded/2011/08/04/arb_3_1_0.jpg">Foto Ketua Umum untuk alat peraga 1</a>
+</li>
+      </ul>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+</div>
+<div id="block-poll-0" class="block block-poll">
+      <h3>Jajak</h3>
+  	<div class="content">
+        
+<div class="poll">
+  <div class="title">Bagaimana kinerja pengurus Partai Golkar di daerah anda?</div>
+  
+<div class="text">Baik</div>
+<div class="bar">
+  <div style="width: 59%;" class="foreground"></div>
+</div>
+<div class="percent">
+  59%
+</div>
+
+<div class="text">Kurang</div>
+<div class="bar">
+  <div style="width: 41%;" class="foreground"></div>
+</div>
+<div class="percent">
+  41%
+</div>
+  <!--div class="total">
+      </div-->
+  </div>
+<!--div class="links"></div-->
+  </div>
+
+</div>
+			</div>
+			  </div> <!-- /#main -->
+
+      		<!--div id="sidebar-right" class="sidebar"-->
+                  </div> <!-- /#sidebar-right -->
+      
+      <div id="footer" class="clear">
+                
+        <!-- added by agus -->
+        <div class="wrapper">
+          <img src="/sites/all/themes/framework/assets/img/text_golkar.jpg" alt="GOLKAR" />
+          <ul>
+            <li><a target="_blank" href="http://www.youtube.com/user/golkarmediacenter" class="social-youtube">Youtube</a></li>
+            <li><a target="_blank" href="http://www.facebook.com/profile.php?id=100000693341954" class="social-facebook">Facebook</a></li>
+            <li><a target="_blank" href="http://www.flickr.com/photos/45430711@N05/" class="social-flickr">Flickr</a></li>
+            <li><a target="_blank" href="http://www.myspace.com/partai-golkar" class="social-myspace">MySpace</a></li>
+            <li><a target="_blank" href="http://twitter.com/golkarku" class="social-twitter">Twitter</a></li>
+          </ul>
+          <p class="float-right text">
+            Copyright 2009 www.golkar.or.id
+          </p>
+        </div>
+        <!-- #added -->
+
+      </div> <!-- /#footer -->
+
+    </div> <!-- /.container -->
+    <!-- /layout -->
+
+  <div id="user_relationships_popup_form" class="user_relationships_ui_popup_form"></div><script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/swftools/onepixelout/onepixelout.js?6"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{var pageTracker = _gat._getTracker("UA-5643792-22");pageTracker._trackPageview();} catch(err) {}
+//--><!]]>
+</script>
+
+  </body>
+</html>

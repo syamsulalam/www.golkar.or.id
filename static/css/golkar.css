@@ -1,0 +1,279 @@
+body,td,th { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color:#3F3F3F; padding: 0; text-align: left; background-image: url(../images/bg.gif); background-repeat: repeat-y; background-position: center; line-height:16px; margin:auto}
+#golkar-main { width:755px; height:100%; margin:auto;}
+#golkar-header { width:755px; height:150px; background-image: url(../images/header3.jpg);
+	text-align: left; background-repeat: no-repeat;}
+#golkar-footer { width: 755px; height:35px;	background-color:#006b33; color: #FFFFFF;
+	text-align: center;	float: left; margin-top:25px}
+#golkar-footer_index { width: 755px; height:35px; background-color:#006b33; color: #FFFFFF;
+	text-align: center;	float: left;}
+#golkar_info { background-color: white; height: 27px; margin:-12px 0 0 0}
+html>body #golkar_info { background-color: white; height: 27px; margin:0px;}
+
+.golkar_active_page { height:100%; width:755px; text-align:left; margin: 0px;}
+#golkar_active_page_left { float: left; width: 515px; text-align:left; padding-left:10px;}
+#golkar_active_page_right {	float: left; width: 230px; padding-top:10px;}
+
+#golkar-search{	margin-top: 52px; margin-right: 20px; margin-left: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8px; background-position: right; text-align: right;}
+.go { vertical-align: middle; background-position: right; background-repeat: no-repeat; margin:-12px 0 0 0}
+html>body .go { vertical-align: middle; background-position: right; background-repeat: no-repeat; margin:-7px 0 0 0}
+.go2 {	vertical-align: middle;	background-position: right center;	background-repeat: no-repeat;
+	text-align: right;	width:23px;	margin-left:10px;}
+#golkar_center { text-align:center; width:755px; float:left; padding:0px; margin-left:9px}
+html>body #golkar_center { text-align:center; width:755px; float:left; padding:0px; margin:auto}
+.h2 {color:#3F3F3F;	font-size: 15px; text-align:left; font-weight: bold; vertical-align: middle; background-position: center center; text-align: left; margin-left:10px;}
+.h3 { color:white; font-size: 15px;	text-align:left; font-weight: bolder; text-align: left;	padding-left:10px; padding-top:5px;}
+.h4 { font-size: 15px; font-weight: bold; color: #006b33; text-align:left; width:100%;}
+.h5 { font-size: 15px; font-weight: bold; color: #006b33; text-align:left; width:100%; padding-top:20px; padding-left:10px}
+.h6 {color:#3F3F3F;	font-size: 15px; text-align:left; font-weight: bold; vertical-align: middle; background-position: center center; text-align: left; padding-left:10px;}
+.tgl_artikel { font-size: 10px; color: #3f3f3f;	text-align: left;}
+.jdlartikel { width:300px; color:#3f3f3f; font-size: 10px; text-align: left; background-position: left top; vertical-align: top;	padding-left: 10px;}
+.artikelbrt { width:479px; color:#3f3f3f; font-size: 11px; text-align: justify;	background-position: top; vertical-align: text-top; height:100%;padding-left:10px; padding-bottom:10px }
+.artikelblog{ width:465px; color:#3f3f3f; font-size: 11px; text-align: justify;	background-position: top; vertical-align: text-top; padding-left:10px; height:100%;}
+.judulvdo { color:#FFFF00; font-size: 15px; font-weight: bolder; text-align: left;}
+.artikelvdo { color:#FFFFFF; width:170px; height:200px;	font-size: 10px; padding-left: 10px; text-align: justify; float: left;} 
+.artikelijotkh { color:#FFFFFF;	width:472px; height:200px; font-size: 10px; padding-left: 10px;	text-align: justify; float: left;} 
+
+.tampilkan { width:200px; color:white; font-size: 10px; text-align: left; float:left; padding-top:10px;}
+#posisi { padding-top: 5px; float: left; padding-left: 10px; text-align: left; vertical-align: middle;}
+#dateDiv { display:inline;	background-position: right center;	text-align: right;	float: right; padding-right: 10px; padding-top: 5px;}
+#menu { background-position:left;	height:75px;} 
+.linkputih{	text-decoration: underline;	color:#FFFFFF}
+.linkputih:hover { color:#999999;}
+.linkabu{ color:#3F3F3F;	text-decoration: none; }
+.linkabu:hover { color:#00a33d;	text-decoration: none;}
+.linkisu14{	color:#006b33; font-size:17pt;	text-decoration: none;}
+.linkisu14:hover { color:#00a33d;}
+.linkisu12{ color:#006b33; font-size:15pt; text-decoration: none;}
+.linkisu12:hover { color:#00a33d;}
+.linkisu10{	color:#006b33; font-size:13pt; text-decoration: none;}
+.linkisu10:hover { color:#00a33d;}
+.link12{ color:#006b33;	font-size:10pt; text-decoration: none; font-weight:bold}
+.link12:hover { color:#00a33d;}
+
+.tabkiri { width: 509px; height: 30px; margin-top:10px;	background-repeat: no-repeat; background-position: left;}
+.video { width: 482px;	height: 100%; text-align: left;	background-position: left top; vertical-align: top;}
+.lihatlain { font-size:10px; color:#006B33; font-weight: bold; text-align: left; text-decoration: none; padding-bottom:10px}
+.lihatlain:hover { font-size:10px; color:#00a33d; font-weight: bold; text-align: left;text-decoration: underline;}
+.lain {	font-size:10px;	color:#006B33; font-weight: bold; text-align: left;	padding-top: 20px; font-size:10px;}
+.linkijolain { font-weight: bold; color: #006B33; text-decoration: none; text-align: left;line-height:46px;}
+.linkijolain:hover { font-weight: bold;	color: #00a33d;	text-decoration: underline; text-align: left;line-height:46px;}
+.linkijo { font-weight: bold; color: #006B33; text-decoration: ; text-align: left; font-size:10px;}
+.linkijo:hover { font-weight: bold;	color: #00a33d;	text-decoration: underline; text-align: left;}
+
+.tglartikel { font-weight: bold; color: #006B33;	text-align: left;}
+.fotoA { float: left; padding-right: 10px; padding-bottom: 10px; width:271px; height:100%; margin:0px; padding:0px;}
+.fotoB { float: left; padding-right: 10px; width:151px; height:100px;}
+.internet_foto { padding:0 10px 10px 10px; width:77px; height:57px; float:left}
+.internet_info { width:110px; float:left}
+.internet_teks { width:40px; height:100%; float:left; font-weight:normal; color:#333333;}
+.internet_link { font-size:10px; text-decoration:underline; text-align:left; width:100px; float:left; color: #006B33;}
+.internet_link2 { font-size:10px; text-decoration:underline; padding-left:20px;  width:75px; float:left; color: #006B33;}
+.internet_link:hover { color:#00a33d}
+
+.download_video { padding:0 10px 10px 0; width:47px; height:35px; float:left}
+.download_info { width:105px; float:left; font-weight:normal; color:#333333;}
+.download_info2 { width:280px; float:left; font-weight:normal; color:#333333; font-size:11px}
+.download_info3 { width:300px; float:left; font-weight:normal; color:#333333; line-height:20px; font-size:11px}
+.download_mp3{ width:200px; float:left}
+.download_mp32{ width:479px; float:left; line-height:20px; font-size:11px}
+.download_wallpaper { padding:0 10px 10px 0; width:50px; height:40px; float:left}
+
+.bullet { float: left; background-image: url(../images/bullet.png);	background-repeat:no-repeat; background-position:center;		
+	padding-top: 40px;	padding-right:20px; width:5px;	height:5px;}
+.bullet2 { float: left;	background-image: url(../images/bullet.png); background-repeat:no-repeat; background-position:center;
+	padding: 2px 10px 0 0;width:15px; height:10px;}
+.bullet3 {background-image:url(../images/bullet.png); width:15px; height:10px; background-repeat:no-repeat; float:left;
+	background-position:center;	padding: 2px 10px 0 0;}
+.populer {	padding-top: 15px;	text-align: left; margin-left:10px;}
+.more {padding:20px 20px 10px 0; text-decoration:underline}
+
+.padtop { padding-top: 10px;}
+.padleft { padding-left: 10px;}
+.padbot { padding-bottom: 10px;}
+.padright { padding-right: 10px;}
+
+.lcdstyle{color:white;font: 26px verdana; text-align:left;}
+.separator{	background-image:url(../images/separator.png);background-repeat:no-repeat;width:207px;
+	height:2px;margin:0}
+.separator2{ background-image:url(../images/separator2.png);background-repeat:no-repeat;width:479px;
+	height:2px;margin:0; padding:10px 0 10px 0}
+
+#countdowncontainer1 { padding-top:50px; float:left; padding-left:20px;}
+
+.pemilu {background-image:url(../images/pemilu.jpg); width:230px; height:250px; background-repeat:no-repeat; margin-top: 10px;}
+.hasilpemilu { background-image:url(../images/hasil-pemilu.jpg); width:230px; height:250px; background-repeat:no-repeat;
+	margin-top: 10px;}
+.klik {padding-top:175px; margin-left:-9px}
+
+#video { background-image: url(../images/tab_video.png);}
+#internet { background-image: url(../images/tab_internet.png); margin:0px; padding:0px;}
+#loremipsum { background-image: url(../images/tab_loremipsum.png);}
+#blogKetuaUmum { background-image: url(../images/tab_blogKetuaUmum.png);}
+#tokoh { background-image: url(../images/tab_tokoh.png);}
+#isu {	background-image: url(../images/tab_isu.png);}
+#partai { background-image: url(../images/tab_partai.png); background-repeat:no-repeat}
+#berita { background-image: url(../images/tab_berita.png);}
+#blog { background-image: url(../images/tab_blog.png);}
+#tentang { background-image: url(../images/tab_tentang.png);}
+#sovenir {background-image: url(../images/tab_sovenir.png);}
+#pencariantkh {	background-image: url(../images/tab_pencarian_tkh.png);}
+#pencarianbrt {	background-image: url(../images/tab_pencarian_brt.png);}
+#hslcaritkh { background-image: url(../images/tab_hslcaritkh.png);}
+#hslPencarian { background-image: url(../images/tab_hasilPencarian.png);}
+#downloadModule { background-image: url(../images/tab_downloadModule.png); height:30px; margin-top:10px;}
+
+.teksfoto {	width:251px; height: 40px; background-color: #8c8c8c; padding: 5px 10px 0 10px; color:#FFFFFF;}
+.menu_tokoh {float:left; width:100%; margin:0px}
+.clear { clear:both;}
+.title { width:40px; float:left;}
+.link {width:40px; float:left;}
+.petatokoh{ background-image:url(../images/petatokoh.png); background-repeat:no-repeat; width:504px; height:244px;}
+.table {background-color:#FFFFFF;; width:480px; margin-top:20px}
+.teksform {	text-align: left; float: left; vertical-align: top; width:90px; height:20px; margin-left:10px; margin-top:10px; }
+.teksform2 { text-align: left; float: left; vertical-align: top; width:90px; height:75px;margin-left:10px; margin-top:10px;  }
+.teksform3 { text-align: left; float: left; vertical-align: top; width:90px; height:30px; margin-left:10px; margin-top:10px; }
+.teksform4 { text-align: left; float: left; vertical-align: top; width:120px; height:30px; margin-left:10px; margin-top:10px; }
+.teksform5 { text-align: left; float: left; vertical-align: top;  width:90px; height:25px; padding-left:110px; margin-top:10px; }
+.teksform6 { text-align: left; float:left; vertical-align: top;  width:200px; height:30px; padding-left:240px; margin-left:10px; margin-top:10px; }
+.teksform7 { text-align: left; float:left; vertical-align: top;  width:75px; height:20px; margin-left:10px;}
+.teksform8 { text-align: left; height:30px;}
+.teksformgo { text-align: left; height:30px; }
+.submit { text-align: center; width: 75px; float:left; margin:10px 0 0 10px}
+.select {width:210px; height:15px; text-align: left; font-size:10px; font-family:verdana; color: #3F3F3F; margin-left:10px; margin-top:10px; float:left}
+.select2 {width:210px; height:75px; text-align: left; font-size:10px; font-family:verdana; color: #3F3F3F; margin-left:10px; margin-top:10px; }
+.select3 {width:130px; height:20px; text-align: left; font-size:10px; font-family:verdana; color: #3F3F3F; float:left;margin-left:10px; margin-top:10px; }
+.select4 {width:100px; height:20px; text-align: left; font-size:10px; font-family:verdana; color: #3F3F3F; float:left; margin-left:10px; }
+.select5 {width:100px; height:20px; text-align: left; font-size:10px; font-family:verdana; color: #3F3F3F; margin-left:10px; float:left; margin-top:5px; }
+.securitycode {background-image:url(../images/securitycode.jpg); background-repeat:no-repeat; height:30px; width:70px; float:left; margin-left:10px; margin-top:10px; }
+
+.kirimartikel {	background-image:url(../images/kirimartikel.png); background-repeat:no-repeat;	width:509px; height:54px; margin-top: 5px;}
+.tekskirim { float:left; margin-left:10px; margin-top:15px;	font-size: 15px; text-align:left; font-weight: bold; vertical-align: middle; background-position: center center; text-align: left;}
+.emailprint { text-align:right; padding-right:30px; padding-top:10px;}
+
+.linkkirim { margin-left: 5px; text-align: left; padding-top: 7px; float:left;}
+
+.kmnartikel { height:285px; float:left; width: 100%;color:#3F3F3F;}
+.comment_artikel { height:100%; float:left; color:#3F3F3F; padding-top:20px; width:509px;}
+.brtartikel { height: 530px; }
+.sovenir { height:220px;}
+.flashvdo { height:225px; margin-left:10px; padding-bottom:10px;}
+.video { width:300px; float:left;}
+.tokoh { height:220px; width:475px; padding-left:10px}
+.dftberita { height:100%; padding:10px; line-height: 15px; width:479px}
+.dftberita2 { height:100%; padding:10px 10px 10px 0; line-height: 15px; width:479px}
+.dftcrberita { height:150px; margin-left:10px; padding-top:10px;}
+.dftcrberita2 { height:150px; margin-left:10px; padding-top:10px; float:left}
+.artikelidx { width:480px; color:#3f3f3f; font-size: 11px; text-align: justify; height:100%; padding-left:10px}
+.hasilpencarianberita { height:100%; padding:10px 0 0 10px; line-height: 15px; width:480px}
+.isu {height: 100px; text-align:center; font-size:16px; color:#00a33d; width:479px}
+.brtlain {margin-top:10px;}
+.subtab {background-image:url(../images/ptgh.gif); width:509px;}
+.peta { height:310px; width:489px; text-align:left; padding:0 0 10px 5px}
+.pencrnbrt {height:100%; width:480px; padding-left:10px}
+.propinsi {background-image:url(../images/propinsi.png); background-repeat:no-repeat; height:37px;}
+.artikeltrkn {float:left}
+.daftarartikel { float:left; padding-left:10px;	line-height: 30px; text-align:left;}
+.form { float:left; padding-left:10px; line-height: 30px; text-align:left; width:75px;}
+.tampilkan2 {text-align:right; margin-right:20px; line-height: 30px;}
+.floatright { float:right}
+.menu_tentang { float:left; padding-left:20px; padding-top:20px;}
+.menu_tentang2 { padding-left:20px; padding-top:20px;}
+
+.pats {	height: 10px; background-image: url(../images/pats.png); background-repeat:no-repeat; width:509px;}
+.ptgh {	height: 100%; background-image: url(../images/ptgh.gif); background-repeat:repeat-y; text-align:left; width:509px; margin: -5px 0 0 0px; }
+.ptgh2 {	height: 100%; background-image: url(../images/ptgh.gif); background-repeat:repeat-y; text-align:left; width:509px; margin: 0px; }
+html>body .ptgh { height: 100%; background-image: url(../images/ptgh.gif); background-repeat:repeat-y; text-align:left; width:509px; margin: 0; }
+html>body .ptgh2 { height: 100%; background-image: url(../images/ptgh.gif); background-repeat:repeat-y; text-align:left; width:509px; margin: 0; }
+.pbwh {	height: 15px; background-image: url(../images/pbwh.png); background-repeat:no-repeat;}
+.pbwh_hsl {height: 15px; background-image: url(../images/pbwh_hsl.png); background-repeat:no-repeat; width:745px;}
+.ptgh_hsl {height: 100%; background-image: url(../images/ptgh_hsl.png); background-repeat:repeat-y; text-align:left; width:725px;
+	margin: 0px; padding:0 10px 0 10px }
+
+.tiats { height: 10px; background-image: url(../images/tiats.png); background-repeat:no-repeat; margin: 0 0 -2px 0}
+.tpbwh { height: 15px; background-image: url(../images/pbwh.png); background-repeat:no-repeat;}
+.tiats_hsl {width:745px; height: 10px; background-image: url(../images/tiats_hsl.png); background-repeat:no-repeat; margin: 0 0 -2px 0}
+
+.aats { height: 10px; background-image: url(../images/aats.png); background-repeat:no-repeat;margin: -2px 0 0 0px}
+
+.iats {	height: 10px; width: 509px; background-image: url(../images/iats.png); background-repeat:no-repeat; background-repeat:no-repeat; margin: 0px}
+html>body .iats {	height: 10px; width: 509px; background-image: url(../images/iats.png); background-repeat:no-repeat; background-repeat:no-repeat; margin: 0px}
+.itgh {	height: 100%; width: 509px; background-image: url(../images/itgh.gif); padding-top:10px; background-repeat:repeat-y; margin:-7px 0 0 0 }
+html>body .itgh { height: 100%; width: 509px; background-image: url(../images/itgh.gif); padding-top:10px; background-repeat:repeat-y; }
+.ibwh {	height: 46px; width: 509px; background-image: url(../images/ibwh.png); background-repeat:no-repeat;}
+
+.kats {height: 8px; width: 230px; background-image: url(../images/kats.gif); background-repeat:no-repeat;}
+.ktgh { height: 100%; width: 220px; background-image: url(../images/ktgh.gif); background-repeat:repeat-y; text-align:left; margin:-5px 0 0 0; padding:0 0 0 10px;}
+html>body .ktgh { height: 100%; width: 220px; background-image: url(../images/ktgh.gif); background-repeat:repeat-y; text-align:left; margin:0px; padding:0 0 0 10px;}
+.kbwh { height: 29px; width: 230px; background-image: url(../images/kbwh.png); background-repeat:no-repeat; margin:0px}
+	
+.abwh {background-image:url(../images/amdbwh.png); background-repeat:no-repeat; height:45px;}
+.atghtag {background-image:url(../images/amdtghtag.png); background-repeat:no-repeat; height:37px}
+.atuatgh {background-image:url(../images/atuatgh.gif); background-repeat:repeat-y; height:100%;text-align:left; padding:10px; width:489px;}
+
+.lkgteksft {background-image:url(../images/teksft.gif); background-repeat:no-repeat; height:4px; text-align:left;}
+
+.amdbwhartkl {background-image:url(../images/amdbwhartkl.png); background-repeat:no-repeat; height:16px;width: 100%; }
+.amdbwhartkl2 {background-image:url(../images/amdbwhartkl.png); background-repeat:no-repeat; height:16px;width: 100%; }
+.amdtgh {background-image:url(../images/amdtgh.gif); background-repeat:repeat-y; padding-bottom:10px; margin:-2px 0 0 0}
+html>body .amdtgh {background-image:url(../images/amdtgh.gif); background-repeat:repeat-y; padding-bottom:10px; margin:0px}
+
+.acrats { background-image:url(../images/acrats.png); background-repeat:no-repeat; height:65px; width:509px; float: left; margin:-19px 0 0 0}
+html>body .acrats { background-image:url(../images/acrats.png); background-repeat:no-repeat; height:65px; width:509px; float: left; margin:0px}
+.acrbwh { background-image:url(../images/acrbwh.png); background-repeat:no-repeat; height:43px; width:509px;
+	text-align:center; padding-top:12px;}
+.p_terkini_comment { height:100%; background-image: url(../images/ptgh.gif); background-repeat:repeat-y; text-align:left; margin:-3px 0 0 0; padding:10px}
+html>body .p_terkini_comment { height:100%; background-image: url(../images/ptgh.gif); background-repeat:repeat-y; text-align:left; margin:-2px 0 0 0; padding:10px}
+.under_construction { background-image:url(../images/under-construction.png); background-repeat:no-repeat; height:404px; width:500px; margin-bottom:15px;}
+.teks_under_construction { font-size:24px;}
+.makecloud_link{ color:#006b33; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold;}
+.makecloud_link:hover{ color:#00a33d; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold;}
+#cse-search-results { color:#999999; padding:0; margin:0; width:605px; text-align:left;}
+#cse-search-box { width:750px}
+#.feedBurnerheadline { color:#006b33; font-size:12px; font-weight:bold;}
+#.feedBurnerheadline:hover { color:#00a33d;}
+#.feedBurnerenclosure { color:#006b33; font-size:12px; font-weight:bold;}
+#.feedByrnerenclosure:hover { color:#00a33d;}
+#myfeeduri1234 { color:#006b33; font-size:12px; font-weight:bold;}
+.date { font-size:10px; color:#333333;}
+.feedburnerFeedBlock ul {
+margin-left:0;
+padding-left:0;
+list-style-type: none;
+}
+
+.feedburnerFeedBlock ul li {
+padding: 5px;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #E0E0E0;
+}
+
+.feedburnerFeedBlock ul li span.headline a {
+color: #006B33;
+text-decoration: none;
+display: block;
+font-weight:bold;
+font-size:12px;
+}
+
+.feedburnerFeedBlock ul li span.headline a:hover {
+color: #00A33D;
+}
+#creditfooter {
+display: none;
+}
+.judul_cari {width:60px; height:30px; float:left; padding:10px 10px 0 10px;}
+.cari_textfield {width:220px; height:30px; float:left; padding:10px 10px 0 10px;}
+.silakan_pilih {width:100px; float:left; padding:10px 10px 0 10px;}
+.line {
+	max-height:1px;
+	border: thin solid #000000;
+	margin:-2px 20px 0 0;
+}
+html>body .line {
+	max-height:1px;
+	margin-right:20px;
+	border: thin solid #000000;
+}
+#pengumumanUndian {background-image:url(../images/pengumuman-pemenang.png); background-repeat:no-repeat; height:250px; width: 230px; margin:10px 0 10px 0}
+#cariTahu { padding-top:202px;}

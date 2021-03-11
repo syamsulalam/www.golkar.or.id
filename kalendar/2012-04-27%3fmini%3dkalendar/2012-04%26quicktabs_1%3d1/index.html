@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" >
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Calendar | golkar.or.id</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?s" />
+<link type="text/css" rel="stylesheet" media="all" href="/files/css/css_607f5eb6411082c2b39f1b9077491868.css" />
+    <script type="text/javascript" src="/misc/jquery.js?s"></script>
+<script type="text/javascript" src="/misc/drupal.js?s"></script>
+<script type="text/javascript" src="/files/languages/id_dc047eba08eee7d01a502bf1b69c27a1.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/custom_search/custom_search.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/nodereference_explorer/plugins/cck/nodereference/nodereference_explorer_plugin_cck_nodereference.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/nodereference_explorer/plugins/cck/link/nodereference_explorer_plugin_cck_link.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/poormanscron/poormanscron.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/user_relationships/user_relationships_ui/user_relationships_ui.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/calendar/jcalendar/jcalendar.js?s"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" }, "cron": { "basePath": "/poormanscron", "runNext": 1345314074 }, "user_relationships_ui": { "loadingimage": "/sites/all/modules/user_relationships/user_relationships_ui/images/loadingAnimation.gif", "savingimage": "/sites/all/modules/user_relationships/user_relationships_ui/images/savingimage.gif", "position": { "position": "absolute", "left": "0", "top": "0" } }, "jcalendar": { "path": "/sites/all/modules/calendar/jcalendar" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function toggle_display() {
+		if ($("#edit-experience").val() == "Tuliskan Jika Ada") {
+			$("#edit-experience").val("");
+		}
+	}
+	toggle_display();
+//--><!]]>
+</script>
+    <!--[if lte IE 7]><link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/framework/ie.css" /><![endif]--> <!--If Less Than or Equal (lte) to IE 7-->
+  </head>
+  <body class="sidebar-right">
+    <!-- Layout -->
+    <div class="container"> <!-- add "showgrid" class to display grid -->
+
+      <div id="header" class="clearfix">
+
+        <!-- added by agus -->
+        <div class="wrapper">
+          <!-- added by indie for beta version label -->	
+          <p id="beta"></p>
+          <!-- end of beta version label -->
+          <p id="site"><em>www.golkar.or.id</em></p>
+          <h1><a href="/" class="float-left">Partai GOLKAR</a></h1>
+                    
+			<form action="/user" method="post" id="login">
+				<input type="hidden" name="form_build_id" id="form-bd6c65531cc840b93e5b54d01753c071" value="form-bd6c65531cc840b93e5b54d01753c071"  />
+				<input type="hidden" name="form_id" id="edit-user-login" value="user_login"  />
+				<p><a href="/user/register">Register</a></p>
+				<p class="clear-both">
+					<input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="name" />
+					<input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="password" />
+					<input type="submit" name="op" id="edit-submit" class="submit" value="Log in" />
+				</p>
+			</form>
+		          <!-- s: login form -->
+          <!--<form action="#">
+            <p><a href="#">Register</a></p>
+            <p>
+              <button type="submit">Logout</button>
+            </p>
+          </form>-->
+          <!-- e: login form -->
+          <ul class="header-menu clear-both">
+            <li><a href="/" class="menu-beranda">Beranda</a></li>
+            <li><a href="/aksi" class="menu-aksi">Aksi</a></li>
+            <li><a href="/golkarku" class="menu-golkarku">GOLKARku</a></li>
+            <li><a href="/media" class="menu-media">Media</a></li>
+            <li><a href="/tentang" class="menu-tentang">Tentang</a></li>
+          </ul>
+          		  <div id="search" class="clear-both">
+		  <form action="/kalendar/2012-04-27?mini=kalendar%2F2012-04&amp;quicktabs_1=1"  accept-charset="UTF-8" method="post" id="search-block-form">
+<div>	<p>
+		
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Masukkan kata kunci yang ingin anda cari." class="form-text  custom-search-default-value" />
+
+		<input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+		<input type="hidden" name="form_build_id" id="form-9e5e03d45ee4328adc5dc3afdaa87e0e" value="form-9e5e03d45ee4328adc5dc3afdaa87e0e"  />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+	</p>
+</div>
+</div></form>
+		  		  </div>
+                    <!-- / .header-menu -->
+        </div>
+        <div id="header-block" class="wrapper clear-both">
+          <div id="block-block-17" class="block block-block">
+
+  
+  <div class="content">
+        <p><img id="banner_wp" alt="Membangun Indonesia Dari Desa" src="/sites/all/themes/framework/assets/img/header-golkar-kekaryaan.jpg" class="header-block-image" /></p>
+<script>
+var idx = 0;
+function changeWPImage() {
+idx = idx == 1?0:1;
+if (idx == 0) {
+$("#banner_wp").attr("src", "/sites/all/themes/framework/assets/img/header-golkar-pendidikan.jpg");
+} else {
+$("#banner_wp").attr("src", "/sites/all/themes/framework/assets/img/header-golkar-kekaryaan.jpg");
+}
+}
+$(document).ready(function () {
+setInterval(changeWPImage, 5000);
+});
+</script>  </div>
+
+</div>
+          <span class="clear-both display-block" style="overflow:hidden;height:0px;"></span>
+        </div>
+        <!-- / #header-block -->
+        <!-- /#added -->
+
+        
+                  <!--a href="" title="">
+            <img src="" alt="" id="logo" />
+          </a-->
+        
+        <!--div id="sitename">
+                        <h1><a href="" title=""></a></h1>
+          
+                      <span id="siteslogan"></span>
+                  </div--> <!-- /#sitename -->
+
+              </div> <!-- /#header -->
+
+      <!--div id="nav">
+                          
+         <!-- if block in $nav, overrides default $primary and $secondary links -->
+
+                                                      <!--div id="secondary-links"></div-->
+          
+              </div--> <!-- /#nav -->
+
+             
+			<span style="clear:both;overflow:hidden;height:0px;"></span>
+      <div id="main" class="wrapper">
+        <div id="content">
+                        		                                                		
+				        <div class="view view-golkar-calendar view-id-golkar_calendar view-display-id-calendar_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      
+<div class="calendar-calendar">
+      <ul class="links"><li class="calendar calendar-year first"><a href="http://golkar.or.id/kalendar/2012?mini=kalendar%2F2012-04&amp;quicktabs_1=1" rel="nofollow">Year</a></li>
+<li class="calendar calendar-month"><a href="http://golkar.or.id/kalendar/2012-04?mini=kalendar%2F2012-04&amp;quicktabs_1=1" rel="nofollow">Month</a></li>
+<li class="calendar calendar-week"><a href="http://golkar.or.id/kalendar/2012-W17?mini=kalendar%2F2012-04&amp;quicktabs_1=1" rel="nofollow">Week</a></li>
+<li class="calendar calendar-day last"><a href="http://golkar.or.id/kalendar/2012-04-27?mini=kalendar%2F2012-04&amp;quicktabs_1=1" rel="nofollow">Day</a></li>
+</ul>  <div class="date-nav clear-block">
+  <div class="date-prev">
+          <span class="next views-summary"> <a href="http://golkar.or.id/kalendar/2012-04-26?mini=kalendar%2F2012-04&amp;quicktabs_1=1" title="Navigate to previous day" rel="nofollow">« Prev</a></span>
+      &nbsp;</div>
+  <div class="date-heading">
+    <h3>Friday, April 27 2012</h3>
+  </div>
+  <div class="date-next">&nbsp;
+          <span class="next views-summary"> <a href="http://golkar.or.id/kalendar/2012-04-28?mini=kalendar%2F2012-04&amp;quicktabs_1=1" title="Navigate to next day" rel="nofollow">Next »</a></span>
+      </div>
+</div>
+</div>    </div>
+  
+  
+      <div class="attachment attachment-after">
+      <div class="calendar-calendar"><div class="day-view">
+<table>
+  <col width="10"></col>
+    <col width="90%"></col>
+    <thead>
+    <tr>
+      <th class="calendar-dayview-hour"></th>
+            <th class="calendar-agenda-items">Materi</th>
+          </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="calendar-agenda-hour">
+         <span class="calendar-hour"></span>
+       </td>
+             <td class="calendar-agenda-items">
+         <div class="calendar">
+         <div class="inner">
+           &nbsp;         </div>
+         </div>
+       </td>
+         
+    </tr>
+       
+  </tbody>
+</table>
+</div></div>    </div>
+  
+  
+  
+  
+</div> 						
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+		</div>
+					<div id="sidebar">
+			  <div id="block-views-1f7cc7f3c1041d7971ffad19613d6fb5" class="block block-views">
+
+  
+  <div class="content">
+        <div class="view view-golkar-calendar view-id-golkar_calendar view-display-id-calendar_block_1 view-dom-id-2">
+    
+  
+  
+      <div class="view-content">
+      
+<div class="calendar-calendar">
+        <div class="date-nav clear-block">
+  <div class="date-prev">
+          <span class="next views-summary"> <a href="http://golkar.or.id/kalendar/2012-04-27?mini=kalendar%2F2012-03&amp;quicktabs_1=1" title="Navigate to previous month" rel="nofollow">« </a></span>
+      &nbsp;</div>
+  <div class="date-heading">
+    <h3><a href="http://golkar.or.id/kalendar/2012-04?mini=kalendar%2F2012-04&amp;quicktabs_1=1" title="View full page month">April</a></h3>
+  </div>
+  <div class="date-next">&nbsp;
+          <span class="next views-summary"> <a href="http://golkar.or.id/kalendar/2012-04-27?mini=kalendar%2F2012-05&amp;quicktabs_1=1" title="Navigate to next month" rel="nofollow"> »</a></span>
+      </div>
+</div>
+</div>    </div>
+  
+  
+      <div class="attachment attachment-after">
+      <div class="calendar-calendar"><div class="month-view">
+ 
+<table class="mini">
+  <thead>
+    <tr>
+              <th class="days sun">
+          S        </th>
+              <th class="days mon">
+          M        </th>
+              <th class="days tue">
+          T        </th>
+              <th class="days wed">
+          W        </th>
+              <th class="days thu">
+          T        </th>
+              <th class="days fri">
+          F        </th>
+              <th class="days sat">
+          S        </th>
+          </tr>
+  </thead>
+  <tbody>
+          <tr>
+                  <td class="sun mini past has-no-events golkar_calendar-2012-04-01">
+            <div class="month mini-day-off"> 1 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="mon mini past has-no-events golkar_calendar-2012-04-02">
+            <div class="month mini-day-off"> 2 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="tue mini past has-no-events golkar_calendar-2012-04-03">
+            <div class="month mini-day-off"> 3 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="wed mini past has-no-events golkar_calendar-2012-04-04">
+            <div class="month mini-day-off"> 4 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="thu mini past has-no-events golkar_calendar-2012-04-05">
+            <div class="month mini-day-off"> 5 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="fri mini past has-no-events golkar_calendar-2012-04-06">
+            <div class="month mini-day-off"> 6 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="sat mini past has-no-events golkar_calendar-2012-04-07">
+            <div class="month mini-day-off"> 7 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td class="sun mini past has-no-events golkar_calendar-2012-04-08">
+            <div class="month mini-day-off"> 8 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="mon mini past has-no-events golkar_calendar-2012-04-09">
+            <div class="month mini-day-off"> 9 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="tue mini past has-no-events golkar_calendar-2012-04-10">
+            <div class="month mini-day-off"> 10 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="wed mini past has-no-events golkar_calendar-2012-04-11">
+            <div class="month mini-day-off"> 11 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="thu mini past has-no-events golkar_calendar-2012-04-12">
+            <div class="month mini-day-off"> 12 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="fri mini past has-no-events golkar_calendar-2012-04-13">
+            <div class="month mini-day-off"> 13 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="sat mini past has-no-events golkar_calendar-2012-04-14">
+            <div class="month mini-day-off"> 14 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td class="sun mini past has-no-events golkar_calendar-2012-04-15">
+            <div class="month mini-day-off"> 15 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="mon mini past has-no-events golkar_calendar-2012-04-16">
+            <div class="month mini-day-off"> 16 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="tue mini past has-no-events golkar_calendar-2012-04-17">
+            <div class="month mini-day-off"> 17 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="wed mini past has-no-events golkar_calendar-2012-04-18">
+            <div class="month mini-day-off"> 18 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="thu mini past has-no-events golkar_calendar-2012-04-19">
+            <div class="month mini-day-off"> 19 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="fri mini past has-no-events golkar_calendar-2012-04-20">
+            <div class="month mini-day-off"> 20 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="sat mini past has-no-events golkar_calendar-2012-04-21">
+            <div class="month mini-day-off"> 21 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td class="sun mini past has-no-events golkar_calendar-2012-04-22">
+            <div class="month mini-day-off"> 22 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="mon mini past has-no-events golkar_calendar-2012-04-23">
+            <div class="month mini-day-off"> 23 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="tue mini past has-no-events golkar_calendar-2012-04-24">
+            <div class="month mini-day-off"> 24 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="wed mini past has-no-events golkar_calendar-2012-04-25">
+            <div class="month mini-day-off"> 25 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="thu mini past has-no-events golkar_calendar-2012-04-26">
+            <div class="month mini-day-off"> 26 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="fri mini past has-no-events golkar_calendar-2012-04-27">
+            <div class="month mini-day-off"> 27 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="sat mini past has-no-events golkar_calendar-2012-04-28">
+            <div class="month mini-day-off"> 28 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td class="sun mini past has-no-events golkar_calendar-2012-04-29">
+            <div class="month mini-day-off"> 29 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="mon mini past has-no-events golkar_calendar-2012-04-30">
+            <div class="month mini-day-off"> 30 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="tue mini empty golkar_calendar-2012-05-01">
+            <div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="wed mini empty golkar_calendar-2012-05-02">
+            <div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="thu mini empty golkar_calendar-2012-05-03">
+            <div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="fri mini empty golkar_calendar-2012-05-04">
+            <div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td class="sat mini empty golkar_calendar-2012-05-05">
+            <div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+      </tbody>
+</table>
+</div></div>    </div>
+  
+  
+  
+  
+</div>   </div>
+
+</div>
+			</div>
+			  </div> <!-- /#main -->
+
+      		<!--div id="sidebar-right" class="sidebar"-->
+                  </div> <!-- /#sidebar-right -->
+      
+      <div id="footer" class="clear">
+                
+        <!-- added by agus -->
+        <div class="wrapper">
+          <img src="/sites/all/themes/framework/assets/img/text_golkar.jpg" alt="GOLKAR" />
+          <ul>
+            <li><a target="_blank" href="http://www.youtube.com/user/golkarmediacenter" class="social-youtube">Youtube</a></li>
+            <li><a target="_blank" href="http://www.facebook.com/profile.php?id=100000693341954" class="social-facebook">Facebook</a></li>
+            <li><a target="_blank" href="http://www.flickr.com/photos/45430711@N05/" class="social-flickr">Flickr</a></li>
+            <li><a target="_blank" href="http://www.myspace.com/partai-golkar" class="social-myspace">MySpace</a></li>
+            <li><a target="_blank" href="http://twitter.com/golkarku" class="social-twitter">Twitter</a></li>
+          </ul>
+          <p class="float-right text">
+            Copyright 2009 www.golkar.or.id
+          </p>
+        </div>
+        <!-- #added -->
+
+      </div> <!-- /#footer -->
+
+    </div> <!-- /.container -->
+    <!-- /layout -->
+
+  <div id="user_relationships_popup_form" class="user_relationships_ui_popup_form"></div><script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/swftools/onepixelout/onepixelout.js?s"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{var pageTracker = _gat._getTracker("UA-5643792-22");pageTracker._trackPageview();} catch(err) {}
+//--><!]]>
+</script>
+
+  </body>
+</html>

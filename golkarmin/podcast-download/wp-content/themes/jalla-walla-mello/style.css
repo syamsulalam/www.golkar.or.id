@@ -1,0 +1,126 @@
+@charset "utf-8";
+/*  
+Theme Name: Jello-Wala-Mello
+Theme URI: http://www.wpdesigner.com/2007/10/06/jello-wala-mello-wordpress-theme/
+Description: WordPress theme created for news and magazine blogs by Small Potato of Wpdesigner.com.
+Version: 0.1
+Author: Small Potato
+Author URI: http://www.wpdesigner.com/
+*/
+/* CSS Document */
+body {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#333333; margin:auto; text-align:center;
+	background-color:#f1c701; color:#333333; background-image:url(images/bg.gif); background-repeat:repeat-y;
+	background-position:center; line-height:20px;}
+#body {margin:auto; }
+#container {width:946px; margin:auto; height:100%;}
+#header {background-image:url(images/header_wordpress_download.jpg); background-repeat:no-repeat; height:150px; margin:auto; padding-top:0px;}
+#form {text-align:right;float:right; margin-top:105px; margin-right:0px; width:300px; height:21px; background-position:top; 
+	background-image:none; background-repeat:no-repeat;}
+	#cari {padding-right:15px;}
+	#s {width:150px; font-size:10px; border:1px solid silver; vertical-align:top; margin-right:5px; padding:4px;}
+#bawah_menu {height:17px;}
+#left {float:left; text-align:justify; background-image:url(images/bg_putih.gif); background-repeat:repeat-y; height:100%;
+	width:623px;}
+	.margin-left {margin-left:15px; width:590px;}
+	#judul_tokoh {font-size:14px; font-weight:bold; text-align:left; padding-top:15px;}
+	#foto {float:left; margin-right:15px; margin-bottom:15px; margin-top:20px;}
+		
+#right {float:left; text-align:left; }
+	.box_tag {background-image:url(images/kumpulan_tag.png); background-repeat:no-repeat; width:323px; height:74px;}
+	.box_kategori {background-image:url(images/kategori.png); background-repeat:no-repeat; width:323px; height:75px;}
+	.box_database {background-image:url(images/database_tokoh.png);	background-repeat:no-repeat; width:323px; height:75px;}
+	.box_simpatisan {background-image:url(images/simpatisan.png); background-repeat:no-repeat; width:323px; height:73px;}
+	.box_middle {background-image:url(images/box_middle.gif); background-repeat:repeat-y; width:323px; height:100%;}
+	.box_middle2 {background-image:url(images/box_middle2.gif); background-repeat:repeat-y; width:323px; height:100%;}
+	.box_judul {padding-top:27px; color:#FFFFFF; font-weight:bold; margin:0px; text-align:left; padding-left:80px;}
+	.box_teks {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; text-align:justify; margin-left:20px; width:280px; 
+		padding-bottom:20px; height:100%;}
+	.box_list {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; text-align:justify; margin-left:20px; width:280px; }
+
+.font10 {font-size:10px; color:#696969; line-height:20px;}
+.font10_link {font-size:10px; text-decoration:underline; color:#6b723e;}
+.font10_link:hover {font-size:10px; text-decoration:underline; color:#000000;}
+.font12 {font-size:11px; color:#000000; float:left;}
+.font12_link {font-size:11px; color:#ff6000; text-decoration:underline;}
+.font12_link:hover {color:#FF0000;}
+
+.float_left {float:left; text-align:left;}
+.ul {padding:0px; margin:0px;}
+.li {margin-left:20px; padding-bottom:10px; padding-top:5px; list-style-position: outside; list-style-image: url(images/bullet.png);}
+.clear {clear:both;}
+.line {height:1px; width:623px; background-image: url(images/line.gif);}
+
+#bg_kuning {background-image:url(images/bg_kuning.gif); background-repeat:repeat-y; height:450px; padding-left:15px;	
+	font-size:11px; font-weight:bold;}
+	.kirimartikel {background-image:url(images/bg_kirim.gif); background-repeat:repeat-y; height:35px; margin-top: 5px; 
+		float:left; width:623px;}
+	.emailprint {margin-left:30px; padding-top:5px; color:#FFFFFF; float:right; margin-right:15px;}
+	.linkkirim {margin-left: 7px; text-align: left; padding-top: 3px;}
+	.margin15 {margin-left:15px; margin-top:5px; color:#FFFFFF; float:left;}
+	#komentar {width:300px; height:300px;}
+		.form_komentar {float:left; font-weight:bold; font-size:11px; border:#eef4b6; width:270px;}
+		.alert {color:#FF0000;}
+		.bold{font-weight:bold; font-size:11px;}
+		.border {color:#333333; border: thin solid #eef4b6;}
+		.komentar_anda {font-size:11px; line-height:15px; font-weight:bold;}
+		.teks_komentar {line-height:15px; margin:15px 0 15px 0;}
+		.user {background-image:url(images/user-comment.gif); background-repeat:no-repeat; margin:15px 0 0 15px; height:14px;}
+		.nama_user {margin-left:25px; font-weight:bold;}
+		#kirim_komentar {margin-left:270px;}
+
+#footer {height:30px; width:970px; text-align:left; padding-left:55px; background-image:url(images/bg_footer.gif);font-size:9px;
+	background-position: center; padding-top: 10px; margin:auto; background-repeat:repeat-y;}
+	#footer_ijo {background-image:url(images/bg_footer_ijo.gif); background-repeat:repeat-y; text-align:left;
+		color:#FFFFFF; padding-left:20px; height:30px;font-size:12px; padding-top:10px;}
+	#footer_ijo a:link {color:#FFFFFF; text-decoration:none;}
+	#footer_ijo a:visited {color:#FFFFFF; text-decoration:none;}
+	#footer_ijo a:hover {color:#FFFFFF; text-decoration:underline;}
+	.footer_link_kiri {color:#ffffff; text-align:left; float:left;}
+	.footer_link_kanan {color:#ffffff; text-align:right; float:right; margin-right:15px;}
+	.footer_link {color:#ffffff;clear:both;}
+    
+/*-----------------------------*/
+/* start nano-css-modification */
+
+/* copied from .li */
+.ul li {margin-left:20px; padding-bottom:10px; padding-top:5px; list-style-position:outside;
+	list-style-image:url(images/bullet.png);}
+
+/* copied from .font12_link */
+.ul li a {font-size:11px; color:#ff6000; text-decoration:underline;}
+ 
+/* copied from .font12_link:hover */ 
+.ul li a:hover {color:#FF0000;}
+
+/* copied from .box_middle */ 
+.box_simpatisan_list .comment.even {background-image:url(images/box_middle.gif); background-repeat:repeat-y; width:323px;
+	height:100%;}
+
+/* copied from .box_middle2 */ 
+.box_simpatisan_list .comment.odd {background-image:url(images/box_middle2.gif); background-repeat:repeat-y; width:323px;
+	height:100%;}
+
+.box_simpatisan_list .box_list p {margin:0; padding:0;}
+
+.menu {float:right;}
+	.menu ul {display:block; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px; list-style:none; text-align:center;}
+	.menu ul li {display:block; float:left; margin:0px; padding:0px 0px 0px 0px; list-style:none;
+		border-left:1px solid #ccc;}
+	.menu a {display:block; background:url(images/pagemenu_bg1.png) top left repeat-x; height:25px; padding:3px 8px 0px 8px;
+		margin:0px 0px -3px 0px; border:0px; color:white; text-decoration:none;
+		font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:12px;}
+	.menu a:hover {color:#333; background:url(images/pagemenu_bg2.png) top left repeat-x;}
+	
+#content {float:left; text-align:justify; background-image:url(images/bg_putih.gif); background-repeat:repeat-y; height:100%;
+	width:623px;}
+	
+#page-links {text-align:right; padding-right:10px;}	
+	
+/* copied from #komentar */
+textarea#comment {width:300px; height:300px;}
+
+#header img {
+    border-style: none;
+}
+/* finish nano-css-modification */
+/*------------------------------*/    

@@ -1,0 +1,42 @@
+function jah(url,target,target2) {
+    // native XMLHttpRequest object
+    document.getElementById(target2).innerHTML = 'sending...';
+    if (window.XMLHttpRequest) {
+        req = new XMLHttpRequest();
+        req.onreadystatechange = function() {jahDone(target,target2);};
+        req.open("GET", url, true);
+        req.send(null);
+    // IE/Windows ActiveX version
+    } else if (window.ActiveXObject) {
+        req = new ActiveXObject("Microsoft.XMLHTTP");
+        if (req) {
+            req.onreadystatechange = function() {jahDone(target,target2);};
+            req.open("GET", url, true);
+            req.send();
+        }
+    }
+}    
+
+function jahDone(target,target2) {
+    // only if req is "loaded"
+    if (req.readyState == 4) {
+        // only if "OK"
+        if (req.status == 200) {
+            results = req.responseText;
+            document.getElementById(target).innerHTML = results;
+            document.getElementById(target2).innerHTML = '';
+        } else {
+            document.getElementById(target2).innerHTML = '';
+            document.getElementById(target).innerHTML="jah error:\n" +
+                req.statusText;
+        }
+
+			$(document).ready(function() 
+			{
+				// fade in content.
+	 			$( '#'+target ).hide();		
+	 			$( '#'+target ).fadeIn("slow");		
+		 	});
+
+    }
+}

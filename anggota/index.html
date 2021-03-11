@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" >
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>golkar.or.id</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?s" />
+<link type="text/css" rel="stylesheet" media="all" href="/files/css/css_44f078959df3608b65a85f68c334f712.css" />
+    <script type="text/javascript" src="/misc/jquery.js?s"></script>
+<script type="text/javascript" src="/misc/drupal.js?s"></script>
+<script type="text/javascript" src="/files/languages/id_dc047eba08eee7d01a502bf1b69c27a1.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/custom_search/custom_search.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/nodereference_explorer/plugins/cck/nodereference/nodereference_explorer_plugin_cck_nodereference.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/nodereference_explorer/plugins/cck/link/nodereference_explorer_plugin_cck_link.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/poormanscron/poormanscron.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/user_relationships/user_relationships_ui/user_relationships_ui.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/views/js/base.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/views/js/ajax_view.js?s"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" }, "cron": { "basePath": "/poormanscron", "runNext": 1383809777 }, "user_relationships_ui": { "loadingimage": "/sites/all/modules/user_relationships/user_relationships_ui/images/loadingAnimation.gif", "savingimage": "/sites/all/modules/user_relationships/user_relationships_ui/images/savingimage.gif", "position": { "position": "absolute", "left": "0", "top": "0" } }, "views": { "ajax_path": "/views/ajax", "ajaxViews": [ { "view_name": "view_anggota_terbaru", "view_display_id": "page_1", "view_args": "", "view_path": "anggota", "view_base_path": "anggota", "view_dom_id": 1, "pager_element": 0 } ] } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function toggle_display() {
+		if ($("#edit-experience").val() == "Tuliskan Jika Ada") {
+			$("#edit-experience").val("");
+		}
+	}
+	toggle_display();
+//--><!]]>
+</script>
+    <!--[if lte IE 7]><link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/framework/ie.css" /><![endif]--> <!--If Less Than or Equal (lte) to IE 7-->
+  </head>
+  <body class="sidebar-right">
+    <!-- Layout -->
+    <div class="container"> <!-- add "showgrid" class to display grid -->
+
+      <div id="header" class="clearfix">
+
+        <!-- added by agus -->
+        <div class="wrapper">
+          <!-- added by indie for beta version label -->	
+          <p id="beta"></p>
+          <!-- end of beta version label -->
+          <p id="site"><em>www.golkar.or.id</em></p>
+          <h1><a href="/" class="float-left">Partai GOLKAR</a></h1>
+                    
+			<form action="/user" method="post" id="login">
+				<input type="hidden" name="form_build_id" id="form-bd6c65531cc840b93e5b54d01753c071" value="form-bd6c65531cc840b93e5b54d01753c071"  />
+				<input type="hidden" name="form_id" id="edit-user-login" value="user_login"  />
+				<p><a href="/user/register">Register</a></p>
+				<p class="clear-both">
+					<input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="name" />
+					<input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="password" />
+					<input type="submit" name="op" id="edit-submit" class="submit" value="Log in" />
+				</p>
+			</form>
+		          <!-- s: login form -->
+          <!--<form action="#">
+            <p><a href="#">Register</a></p>
+            <p>
+              <button type="submit">Logout</button>
+            </p>
+          </form>-->
+          <!-- e: login form -->
+          <ul class="header-menu clear-both">
+            <li><a href="/" class="menu-beranda">Beranda</a></li>
+            <li><a href="/aksi" class="menu-aksi">Aksi</a></li>
+            <li><a href="/golkarku" class="menu-golkarku">GOLKARku</a></li>
+            <li><a href="/media" class="menu-media">Media</a></li>
+            <li><a href="/tentang" class="menu-tentang">Tentang</a></li>
+          </ul>
+          		  <div id="search" class="clear-both">
+		  <form action="/anggota"  accept-charset="UTF-8" method="post" id="search-block-form">
+<div>	<p>
+		
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Masukkan kata kunci yang ingin anda cari." class="form-text  custom-search-default-value" />
+
+		<input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+		<input type="hidden" name="form_build_id" id="form-4d1c280d348cf54fce2011eddd72e82f" value="form-4d1c280d348cf54fce2011eddd72e82f"  />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+	</p>
+</div>
+</div></form>
+		  		  </div>
+                    <!-- / .header-menu -->
+        </div>
+        <div id="header-block" class="wrapper clear-both">
+          <div id="block-block-17" class="block block-block">
+
+  
+  <div class="content">
+        <p><img id="banner_wp" alt="Membangun Indonesia Dari Desa" src="/sites/all/themes/framework/assets/img/header-golkar-kekaryaan.jpg" class="header-block-image" /></p>
+<script>
+var idx = 0;
+function changeWPImage() {
+idx = idx == 1?0:1;
+if (idx == 0) {
+$("#banner_wp").attr("src", "/sites/all/themes/framework/assets/img/header-golkar-pendidikan.jpg");
+} else {
+$("#banner_wp").attr("src", "/sites/all/themes/framework/assets/img/header-golkar-kekaryaan.jpg");
+}
+}
+$(document).ready(function () {
+setInterval(changeWPImage, 5000);
+});
+</script>  </div>
+
+</div>
+          <span class="clear-both display-block" style="overflow:hidden;height:0px;"></span>
+        </div>
+        <!-- / #header-block -->
+        <!-- /#added -->
+
+        
+                  <!--a href="" title="">
+            <img src="" alt="" id="logo" />
+          </a-->
+        
+        <!--div id="sitename">
+                        <h1><a href="" title=""></a></h1>
+          
+                      <span id="siteslogan"></span>
+                  </div--> <!-- /#sitename -->
+
+              </div> <!-- /#header -->
+
+      <!--div id="nav">
+                          
+         <!-- if block in $nav, overrides default $primary and $secondary links -->
+
+                                                      <!--div id="secondary-links"></div-->
+          
+              </div--> <!-- /#nav -->
+
+             
+			<span style="clear:both;overflow:hidden;height:0px;"></span>
+      <div id="main" class="wrapper">
+        <div id="content">
+                        		                                                		
+				        <div class="view view-view-anggota-terbaru view-id-view_anggota_terbaru view-display-id-page_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      <h3>Daftar Anggota</h3>
+<div class="info">memperlihatkan <b>20</b> dari <b>3165</b> anggota</div>
+<div id="list-anggota">
+<div id="list_wrapper">
+<ul class="two_columns">
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar irfan" title="Avatar irfan"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">irfan</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar miau imut" title="Avatar miau imut"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">miau imut</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/picture-2612.jpg" alt="Avatar yaki firmansyah" title="Avatar yaki firmansyah"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">yaki firmansyah</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Akbar syarif, S.Pi" title="Avatar Akbar syarif, S.Pi"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">Akbar syarif, S.Pi</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar zaenal aripin" title="Avatar zaenal aripin"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">zaenal aripin</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar ROBI OCVIANDRA" title="Avatar ROBI OCVIANDRA"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">ROBI OCVIANDRA</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar trez" title="Avatar trez"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">trez</span>
+<span class="skor-text">1 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Kairani John" title="Avatar Kairani John"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">Kairani John</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Ryan Sanchia" title="Avatar Ryan Sanchia"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">Ryan Sanchia</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Ahmad Syaiful.S" title="Avatar Ahmad Syaiful.S"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">Ahmad Syaiful.S</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar inb hars" title="Avatar inb hars"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">inb hars</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar kuceng" title="Avatar kuceng"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">kuceng</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/picture-2602.jpg" alt="Avatar IS Ramdhan" title="Avatar IS Ramdhan"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">IS Ramdhan</span>
+<span class="skor-text">1 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Jauharoh Haddad" title="Avatar Jauharoh Haddad"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">Jauharoh Haddad</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/picture-2600.jpg" alt="Avatar Rida Firdaus S.Pd.I" title="Avatar Rida Firdaus S.Pd.I"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">Rida Firdaus S.Pd.I</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/picture-2599.jpg" alt="Avatar LALU DAMANHURI" title="Avatar LALU DAMANHURI"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">LALU DAMANHURI</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Daryo Tabayani" title="Avatar Daryo Tabayani"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">Daryo Tabayani</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Jasa Penerjemah" title="Avatar Jasa Penerjemah"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">Jasa Penerjemah</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar mochamsori" title="Avatar mochamsori"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">mochamsori</span>
+<span class="skor-text">0 poin</span>
+
+
+</li>
+  <li><div class="picture">
+  <img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar sigit hermawan" title="Avatar sigit hermawan"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div><span class="title">sigit hermawan</span>
+<span class="skor-text">1 poin</span>
+
+
+</li>
+</ul>
+</div>
+</div>
+    </div>
+  
+      <div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a href="/anggota?page=1" title="Ke halaman 2" class="active">2</a></li>
+<li class="pager-item"><a href="/anggota?page=2" title="Ke halaman 3" class="active">3</a></li>
+<li class="pager-item"><a href="/anggota?page=3" title="Ke halaman 4" class="active">4</a></li>
+<li class="pager-item"><a href="/anggota?page=4" title="Ke halaman 5" class="active">5</a></li>
+<li class="pager-item"><a href="/anggota?page=5" title="Ke halaman 6" class="active">6</a></li>
+<li class="pager-item"><a href="/anggota?page=6" title="Ke halaman 7" class="active">7</a></li>
+<li class="pager-item"><a href="/anggota?page=7" title="Ke halaman 8" class="active">8</a></li>
+<li class="pager-item"><a href="/anggota?page=8" title="Ke halaman 9" class="active">9</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="/anggota?page=1" title="Ke halaman selanjutnya" class="active">selanjutnya ›</a></li>
+<li class="pager-last last"><a href="/anggota?page=124" title="Ke halaman akhir" class="active">akhir »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div> 						
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+		</div>
+					<div id="sidebar">
+			  <div id="block-block-1" class="block block-block">
+
+  
+  <div class="content">
+        <ul class="sidebar-menu">
+<li><a class="index index-brigadedigital" href="/brigade-digital">Brigade Digital</a></li>
+<li><a class="index index-kadergolkar" href="/pendaftaran">Kader GOLKAR</a></li>
+<li><a class="index index-fasilitas" href="/fasilitas">Fasilitas</a></li>
+<li><a class="index index-pers" href="/indeks/press-release">Pers</a></li>
+<li><a class="index index-acara" href="/acara">Acara</a></li>
+<li><a class="index index-fpgdpd1dpd2" href="/pages-tentang/1131">FPG DPD1/DPD2</a></li>
+</ul>
+  </div>
+
+</div>
+			</div>
+			  </div> <!-- /#main -->
+
+      		<!--div id="sidebar-right" class="sidebar"-->
+                  </div> <!-- /#sidebar-right -->
+      
+      <div id="footer" class="clear">
+                
+        <!-- added by agus -->
+        <div class="wrapper">
+          <img src="/sites/all/themes/framework/assets/img/text_golkar.jpg" alt="GOLKAR" />
+          <ul>
+            <li><a target="_blank" href="http://www.youtube.com/user/golkarmediacenter" class="social-youtube">Youtube</a></li>
+            <li><a target="_blank" href="http://www.facebook.com/profile.php?id=100000693341954" class="social-facebook">Facebook</a></li>
+            <li><a target="_blank" href="http://www.flickr.com/photos/45430711@N05/" class="social-flickr">Flickr</a></li>
+            <li><a target="_blank" href="http://www.myspace.com/partai-golkar" class="social-myspace">MySpace</a></li>
+            <li><a target="_blank" href="http://twitter.com/golkarku" class="social-twitter">Twitter</a></li>
+          </ul>
+          <p class="float-right text">
+            Copyright 2009 www.golkar.or.id
+          </p>
+        </div>
+        <!-- #added -->
+
+      </div> <!-- /#footer -->
+
+    </div> <!-- /.container -->
+    <!-- /layout -->
+
+  <div id="user_relationships_popup_form" class="user_relationships_ui_popup_form"></div><script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/swftools/onepixelout/onepixelout.js?s"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{var pageTracker = _gat._getTracker("UA-5643792-22");pageTracker._trackPageview();} catch(err) {}
+//--><!]]>
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?6" />
+<link type="text/css" rel="stylesheet" media="all" href="/files/css/css_ad9f412f93ad8bd285af3c0d4e2e1b2b.css" />
+<link type="text/css" rel="stylesheet" media="print" href="/files/css/css_8f941fee1ecfb3363c775370c458b036.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/files/css/css_15ff4607fbd5cd40fc7c4f2c22902225.css" />
+    <script type="text/javascript" src="/misc/jquery.js?6"></script>
+<script type="text/javascript" src="/misc/drupal.js?6"></script>
+<script type="text/javascript" src="/files/languages/id_dc047eba08eee7d01a502bf1b69c27a1.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/custom_search/custom_search.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/nodereference_explorer/plugins/cck/nodereference/nodereference_explorer_plugin_cck_nodereference.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/nodereference_explorer/plugins/cck/link/nodereference_explorer_plugin_cck_link.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/poormanscron/poormanscron.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/user_relationships/user_relationships_ui/user_relationships_ui.js?6"></script>
+<script type="text/javascript" src="/sites/all/themes/tao/js/tao.js?6"></script>
+<script type="text/javascript" src="/sites/all/themes/rubik/js/rubik.js?6"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "cron": { "basePath": "/poormanscron", "runNext": 1325470579 }, "user_relationships_ui": { "loadingimage": "/sites/all/modules/user_relationships/user_relationships_ui/images/loadingAnimation.gif", "savingimage": "/sites/all/modules/user_relationships/user_relationships_ui/images/savingimage.gif", "position": { "position": "absolute", "left": "0", "top": "0" } } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function toggle_display() {
+		if ($("#edit-experience").val() == "Tuliskan Jika Ada") {
+			$("#edit-experience").val("");
+		}
+	}
+	toggle_display();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$.fn.showIf = function( show, arg ) {
+       return this[ show ? 'show' : 'hide' ]( arg );
+     };
+     $().ready(function() {
+       $('#edit-profile-country').change(function() {
+         var country = $(this).val();
+         $('#state').showIf( country == 'ID' );
+         $('#city').showIf( country == 'ID' );
+         $('#province').showIf( country == 'CA' );
+       }).trigger('change');
+     }); 
+//--><!]]>
+</script>
+    <title>golkar.or.id</title>
+  </head>
+  <body  class="not-front not-logged-in page-admin one-sidebar sidebar-left tao rubik admin-static">
+
+  
+  <div id='top'>
+    <div id='page-title' class='limiter clear-block'>
+      <!--<a href="/admin/golkar/anggota_dewan#help-text=1" id="help-toggler" class="toggler active">Panduan</a>-->
+            <h2 class='page-title path-admin-golkar-anggota_dewan path-admin-golkar path-admin'>
+        <span class='icon'></span>              </h2>
+    </div>
+    <div id='branding' class='limiter clear-block'>
+      <ul class="links"><li class="login first"><a href="/user">Login</a></li>
+<li class="register last"><a href="/user/register">Register</a></li>
+</ul>      <div class='breadcrumb clear-block'><span class='breadcrumb-link'><a href="/">golkar.or.id</a></span><span class='breadcrumb-link'><strong>Administer Wilayah Anggota Dewan</strong></span></div>
+    </div>
+  </div>
+
+  
+<div id='page' class='clear-block limiter page-content'>
+  
+  <div id='content'>
+          <div class='content-wrapper clear-block'><div class="view view-cari-dewan view-id-cari_dewan view-display-id-page_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      <a href="/node/add/alokasi">Tambah Lokasi</a>
+<table class="views-table">
+    <thead>
+    <tr>
+              <th class="views-field views-field-realname">
+          Nama        </th>
+              <th class="views-field views-field-picture">
+          Avatar        </th>
+              <th class="views-field views-field-nid">
+          Aksi        </th>
+              <th class="views-field views-field-name">
+          Kabupaten/Kota        </th>
+              <th class="views-field views-field-uid">
+          Uid        </th>
+          </tr>
+  </thead>
+  <tbody>
+          <tr class="odd views-row-first">
+                  <td class="views-field views-field-realname">
+		  		              Anggota Dewan Yan...			          </td>
+                  <td class="views-field views-field-picture">
+		  		              <div class="picture">
+  <img src="http://golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar Anggota Dewan Yang Terhormat" title="Avatar Anggota Dewan Yang Terhormat"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div>			          </td>
+                  <td class="views-field views-field-nid">
+		  		  		  	<a href="/node/885/edit">Edit</a> | <a href="/node/885/delete">Delete</a>
+			          </td>
+                  <td class="views-field views-field-name">
+		  		              Sumatera Utara I			          </td>
+                  <td class="views-field views-field-uid">
+		  		  	<a href="/user/35/edit">Edit Profile</a>
+		  		              35			          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-realname">
+		  		              Wakil Rakyat			          </td>
+                  <td class="views-field views-field-picture">
+		  		              <div class="picture">
+  <img src="http://golkar.or.id/files/imagecache/user_image_default/pictures/picture-36.jpg" alt="Avatar Wakil Rakyat" title="Avatar Wakil Rakyat"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div>			          </td>
+                  <td class="views-field views-field-nid">
+		  		  		  	<a href="/node/886/edit">Edit</a> | <a href="/node/886/delete">Delete</a>
+			          </td>
+                  <td class="views-field views-field-name">
+		  		              			          </td>
+                  <td class="views-field views-field-uid">
+		  		  	<a href="/user/36/edit">Edit Profile</a>
+		  		              36			          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-realname">
+		  		              Sayed Fuad Zakaria			          </td>
+                  <td class="views-field views-field-picture">
+		  		              <div class="picture">
+  <img src="http://golkar.or.id/files/imagecache/user_image_default/pictures/picture-74.jpg" alt="Avatar Sayed Fuad Zakaria" title="Avatar Sayed Fuad Zakaria"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div>			          </td>
+                  <td class="views-field views-field-nid">
+		  		  		  	<a href="/node/917/edit">Edit</a> | <a href="/node/917/delete">Delete</a>
+			          </td>
+                  <td class="views-field views-field-name">
+		  		              Nanggroe Aceh Darussalam I			          </td>
+                  <td class="views-field views-field-uid">
+		  		  	<a href="/user/74/edit">Edit Profile</a>
+		  		              74			          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-realname">
+		  		              Marzuki Daud			          </td>
+                  <td class="views-field views-field-picture">
+		  		              <div class="picture">
+  <img src="http://golkar.or.id/files/imagecache/user_image_default/pictures/picture-75.jpg" alt="Avatar Marzuki Daud" title="Avatar Marzuki Daud"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div>			          </td>
+                  <td class="views-field views-field-nid">
+		  		  		  	<a href="/node/918/edit">Edit</a> | <a href="/node/918/delete">Delete</a>
+			          </td>
+                  <td class="views-field views-field-name">
+		  		              Nanggroe Aceh Darussalam II			          </td>
+                  <td class="views-field views-field-uid">
+		  		  	<a href="/user/75/edit">Edit Profile</a>
+		  		              75			          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-realname">
+		  		              Chairuman Harahap			          </td>
+                  <td class="views-field views-field-picture">
+		  		              <div class="picture">
+  <img src="http://golkar.or.id/files/imagecache/user_image_default/pictures/picture-76.jpg" alt="Avatar Chairuman Harahap" title="Avatar Chairuman Harahap"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div>			          </td>
+                  <td class="views-field views-field-nid">
+		  		  		  	<a href="/node/920/edit">Edit</a> | <a href="/node/920/delete">Delete</a>
+			          </td>
+                  <td class="views-field views-field-name">
+		  		              Sumatera Utara II			          </td>
+                  <td class="views-field views-field-uid">
+		  		  	<a href="/user/76/edit">Edit Profile</a>
+		  		              76			          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-realname">
+		  		              Neil Iskandar Daulay			          </td>
+                  <td class="views-field views-field-picture">
+		  		              <div class="picture">
+  <img src="http://golkar.or.id/files/imagecache/user_image_default/pictures/picture-77.jpg" alt="Avatar Neil Iskandar Daulay" title="Avatar Neil Iskandar Daulay"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div>			          </td>
+                  <td class="views-field views-field-nid">
+		  		  		  	<a href="/node/922/edit">Edit</a> | <a href="/node/922/delete">Delete</a>
+			          </td>
+                  <td class="views-field views-field-name">
+		  		              Sumatera Utara II			          </td>
+                  <td class="views-field views-field-uid">
+		  		  	<a href="/user/77/edit">Edit Profile</a>
+		  		              77			          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-realname">
+		  		              Ali Wongso Halomo...			          </td>
+                  <td class="views-field views-field-picture">
+		  		              <div class="picture">
+  <img src="http://golkar.or.id/files/imagecache/user_image_default/pictures/picture-78.jpg" alt="Avatar Ali Wongso Halomoan Sinaga" title="Avatar Ali Wongso Halomoan Sinaga"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div>			          </td>
+                  <td class="views-field views-field-nid">
+		  		  		  	<a href="/node/923/edit">Edit</a> | <a href="/node/923/delete">Delete</a>
+			          </td>
+                  <td class="views-field views-field-name">
+		  		              Sumatera Utara III			          </td>
+                  <td class="views-field views-field-uid">
+		  		  	<a href="/user/78/edit">Edit Profile</a>
+		  		              78			          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-realname">
+		  		              Anthon Sihombing			          </td>
+                  <td class="views-field views-field-picture">
+		  		              <div class="picture">
+  <img src="http://golkar.or.id/files/imagecache/user_image_default/pictures/picture-79.jpg" alt="Avatar Anthon Sihombing" title="Avatar Anthon Sihombing"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div>			          </td>
+                  <td class="views-field views-field-nid">
+		  		  		  	<a href="/node/924/edit">Edit</a> | <a href="/node/924/delete">Delete</a>
+			          </td>
+                  <td class="views-field views-field-name">
+		  		              Sumatera Utara III			          </td>
+                  <td class="views-field views-field-uid">
+		  		  	<a href="/user/79/edit">Edit Profile</a>
+		  		              79			          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-realname">
+		  		              Jeffrie Geovanie			          </td>
+                  <td class="views-field views-field-picture">
+		  		              <div class="picture">
+  <img src="http://golkar.or.id/files/imagecache/user_image_default/pictures/picture-80.jpg" alt="Avatar Jeffrie Geovanie" title="Avatar Jeffrie Geovanie"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div>			          </td>
+                  <td class="views-field views-field-nid">
+		  		  		  	<a href="/node/925/edit">Edit</a> | <a href="/node/925/delete">Delete</a>
+			          </td>
+                  <td class="views-field views-field-name">
+		  		              Sumatera Barat I			          </td>
+                  <td class="views-field views-field-uid">
+		  		  	<a href="/user/80/edit">Edit Profile</a>
+		  		              80			          </td>
+              </tr>
+          <tr class="even views-row-last">
+                  <td class="views-field views-field-realname">
+		  		              Azwir Dainy Tara			          </td>
+                  <td class="views-field views-field-picture">
+		  		              <div class="picture">
+  <img src="http://golkar.or.id/files/imagecache/user_image_default/pictures/picture-98.jpg" alt="Avatar Azwir Dainy Tara" title="Avatar Azwir Dainy Tara"  class="imagecache imagecache-user_image_default" width="70" height="70" /></div>			          </td>
+                  <td class="views-field views-field-nid">
+		  		  		  	<a href="/node/926/edit">Edit</a> | <a href="/node/926/delete">Delete</a>
+			          </td>
+                  <td class="views-field views-field-name">
+		  		              Sumatera Barat I			          </td>
+                  <td class="views-field views-field-uid">
+		  		  	<a href="/user/98/edit">Edit Profile</a>
+		  		              98			          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div>
+          </div>
+</div>
+
+  <div id='footer' class='limiter clear-block'>
+          </div>
+
+  <div id="user_relationships_popup_form" class="user_relationships_ui_popup_form"></div><script type="text/javascript" src="/sites/all/modules/swftools/onepixelout/onepixelout.js?6"></script>
+
+  </body>
+</html>

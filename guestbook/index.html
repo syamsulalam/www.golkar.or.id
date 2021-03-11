@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" >
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Komentar | golkar.or.id</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/files/css/css_1bea83f568005abb71b3b9731a8eb4d9.css" />
+    <script type="text/javascript" src="/misc/jquery.js?s"></script>
+<script type="text/javascript" src="/misc/drupal.js?s"></script>
+<script type="text/javascript" src="/files/languages/id_dc047eba08eee7d01a502bf1b69c27a1.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/custom_search/custom_search.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/nodereference_explorer/plugins/cck/nodereference/nodereference_explorer_plugin_cck_nodereference.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/nodereference_explorer/plugins/cck/link/nodereference_explorer_plugin_cck_link.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/poormanscron/poormanscron.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/user_relationships/user_relationships_ui/user_relationships_ui.js?s"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" }, "cron": { "basePath": "/poormanscron", "runNext": 1360170517 }, "user_relationships_ui": { "loadingimage": "/sites/all/modules/user_relationships/user_relationships_ui/images/loadingAnimation.gif", "savingimage": "/sites/all/modules/user_relationships/user_relationships_ui/images/savingimage.gif", "position": { "position": "absolute", "left": "0", "top": "0" } } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function toggle_display() {
+		if ($("#edit-experience").val() == "Tuliskan Jika Ada") {
+			$("#edit-experience").val("");
+		}
+	}
+	toggle_display();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$.fn.showIf = function( show, arg ) {
+       return this[ show ? 'show' : 'hide' ]( arg );
+     };
+     $().ready(function() {
+       $('#edit-profile-country').change(function() {
+         var country = $(this).val();
+         $('#state').showIf( country == 'ID' );
+         $('#city').showIf( country == 'ID' );
+         $('#province').showIf( country == 'CA' );
+       }).trigger('change');
+     }); 
+//--><!]]>
+</script>
+    <!--[if lte IE 7]><link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/framework/ie.css" /><![endif]--> <!--If Less Than or Equal (lte) to IE 7-->
+  </head>
+  <body class="sidebar-right">
+    <!-- Layout -->
+    <div class="container"> <!-- add "showgrid" class to display grid -->
+
+      <div id="header" class="clearfix">
+
+        <!-- added by agus -->
+        <div class="wrapper">
+          <!-- added by indie for beta version label -->	
+          <p id="beta"></p>
+          <!-- end of beta version label -->
+          <p id="site"><em>www.golkar.or.id</em></p>
+          <h1><a href="/" class="float-left">Partai GOLKAR</a></h1>
+                    
+			<form action="/user" method="post" id="login">
+				<input type="hidden" name="form_build_id" id="form-bd6c65531cc840b93e5b54d01753c071" value="form-bd6c65531cc840b93e5b54d01753c071"  />
+				<input type="hidden" name="form_id" id="edit-user-login" value="user_login"  />
+				<p><a href="/user/register">Register</a></p>
+				<p class="clear-both">
+					<input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="name" />
+					<input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="password" />
+					<input type="submit" name="op" id="edit-submit" class="submit" value="Log in" />
+				</p>
+			</form>
+		          <!-- s: login form -->
+          <!--<form action="#">
+            <p><a href="#">Register</a></p>
+            <p>
+              <button type="submit">Logout</button>
+            </p>
+          </form>-->
+          <!-- e: login form -->
+          <ul class="header-menu clear-both">
+            <li><a href="/" class="menu-beranda">Beranda</a></li>
+            <li><a href="/aksi" class="menu-aksi">Aksi</a></li>
+            <li><a href="/golkarku" class="menu-golkarku">GOLKARku</a></li>
+            <li><a href="/media" class="menu-media">Media</a></li>
+            <li><a href="/tentang" class="menu-tentang">Tentang</a></li>
+          </ul>
+          		  <div id="search" class="clear-both">
+		  <form action="/guestbook"  accept-charset="UTF-8" method="post" id="search-block-form">
+<div>	<p>
+		
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Masukkan kata kunci yang ingin anda cari." class="form-text  custom-search-default-value" />
+
+		<input type="submit" name="op" id="edit-submit-1" value="Search"  class="form-submit" />
+		<input type="hidden" name="form_build_id" id="form-7d0480b2abbc3c37292b3fb355960552" value="form-7d0480b2abbc3c37292b3fb355960552"  />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+	</p>
+</div>
+</div></form>
+		  		  </div>
+                    <!-- / .header-menu -->
+        </div>
+        <div id="header-block" class="wrapper clear-both">
+          <div id="block-block-17" class="block block-block">
+
+  
+  <div class="content">
+        <p><img id="banner_wp" alt="Membangun Indonesia Dari Desa" src="/sites/all/themes/framework/assets/img/header-golkar-kekaryaan.jpg" class="header-block-image" /></p>
+<script>
+var idx = 0;
+function changeWPImage() {
+idx = idx == 1?0:1;
+if (idx == 0) {
+$("#banner_wp").attr("src", "/sites/all/themes/framework/assets/img/header-golkar-pendidikan.jpg");
+} else {
+$("#banner_wp").attr("src", "/sites/all/themes/framework/assets/img/header-golkar-kekaryaan.jpg");
+}
+}
+$(document).ready(function () {
+setInterval(changeWPImage, 5000);
+});
+</script>  </div>
+
+</div>
+          <span class="clear-both display-block" style="overflow:hidden;height:0px;"></span>
+        </div>
+        <!-- / #header-block -->
+        <!-- /#added -->
+
+        
+                  <!--a href="" title="">
+            <img src="" alt="" id="logo" />
+          </a-->
+        
+        <!--div id="sitename">
+                        <h1><a href="" title=""></a></h1>
+          
+                      <span id="siteslogan"></span>
+                  </div--> <!-- /#sitename -->
+
+              </div> <!-- /#header -->
+
+      <!--div id="nav">
+                          
+         <!-- if block in $nav, overrides default $primary and $secondary links -->
+
+                                                      <!--div id="secondary-links"></div-->
+          
+              </div--> <!-- /#nav -->
+
+             
+			<span style="clear:both;overflow:hidden;height:0px;"></span>
+      <div id="main" class="wrapper">
+        <div id="content">
+                        		                                                		
+				        <div class="guestbook"><div id="content-comment"><h3>Komentar</h3><div class="info">memperlihatkan <b>20</b> dari <b>781</b> komentar</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>Indah dengan kebersamaan. Bersatu padu hadapi tantangan rintangan. Bersatu menuju Indonesia yang lebih baik dengan <a title="Ekiosku.com jual beli online aman menyenangkan" href="http://www.qurban-aqiqah.com/ekiosku-com-jual-beli-online-aman.html"><strong><em>Ekiosku.com jual beli online aman menyenangkan</em></strong></a>, <a href="http://www.qurban-aqiqah.com/ekiosku-com-purchase-online-safe-fun.html">Ekiosku.com purchase online safe fun</a>, <a href="http://budiseo.wordpress.com/2013/01/22/ekiosku-com-jual-beli-online-aman-menyenangkan/">Ekiosku.com jual beli online aman menyenangkan</a>, <a href="http://budiseo.wordpress.com/">Budi Santoso</a>, <a title="Ekiosku.com jual beli online aman menyenangkan" href="http://budiseo.wordpress.com/2013/01/31/ekiosku-com-jual-beli-online-aman/">Ekiosku.com jual beli online aman menyenangkan</a>, <a title="Permalink ke Berbagi Berfikir" href="http://budiseo.wordpress.com/2012/10/04/berbagi-berfikir/" rel="bookmark">Berbagi Berfikir</a>, <a title="Permalink ke Ekiosku.com jual beli online aman menyenangkan" href="http://budiseo.wordpress.com/2013/01/22/ekiosku-com-jual-beli-online-aman-menyenangkan/" rel="bookmark">Ekiosku.com jual beli online aman menyenangkan</a>, <a title="Permalink ke Cara Daftar di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/cara-daftar-di-ekiosku-com/" rel="bookmark">Cara Daftar di Ekiosku.com</a>, <a title="Permalink ke Fitur Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/fitur-ekiosku-com/" rel="bookmark">Fitur Ekiosku.com</a>, <a title="Permalink ke Cara Membuat Toko Online Gratis Di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/cara-membuat-toko-online-gratis-di-ekiosku-com/" rel="bookmark">Cara Membuat Toko Online Gratis Di Ekiosku.com</a>, <a title="Permalink ke Cara Tambah dan Pengaturan Produk DI Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/cara-tambah-dan-pengaturan-produk-di-ekiosku-com/" rel="bookmark">Cara Tambah dan Pengaturan Produk DI Ekiosku.com</a>, <a title="Permalink ke Pembayaran dan Pengembalian Dana di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/pembayaran-dan-pengembalian-dana-di-ekiosku-com/" rel="bookmark">Pembayaran dan Pengembalian Dana di Ekiosku.com</a>, <a title="Permalink ke Gratis Ongkos Kirim di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/gratis-ongkos-kirim-di-ekiosku-com/" rel="bookmark">Gratis Ongkos Kirim di Ekiosku.com</a>, <a title="Permalink ke Cara Pembelian dan Prosedure Pengiriman Pesanan di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/cara-pembelian-dan-prosedure-pengiriman-pesanan-di-ekiosku-com/" rel="bookmark">Cara Pembelian dan Prosedure Pengiriman Pesanan di Ekiosku.com</a>, <a title="Permalink ke Klaim &amp; Keluhan di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/klaim-keluhan-di-ekiosku-com/" rel="bookmark">Klaim &amp; Keluhan di Ekiosku.com</a>, <a title="Permalink ke Tips Belanja Online Aman" href="http://budiseo.wordpress.com/2013/01/24/tips-belanja-online-aman/" rel="bookmark">Tips Belanja Online Aman</a>, <a title="Permalink ke Keuntungan Jualan di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/keuntungan-jualan-di-ekiosku-com/" rel="bookmark">Keuntungan Jualan di Ekiosku.com</a>, <a title="Permalink ke Cara Jualan di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/cara-jualan-di-ekios-com/" rel="bookmark">Cara Jualan di Ekiosku.com</a><a title="Permalink ke Cara Menambah Varian di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/cara-menambah-varian-di-ekios-com/" rel="bookmark">Cara Menambah Varian di Ekiosku.com</a>, <a title="Permalink ke Fitur Wish List di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/fitur-wish-list-di-ekiosku-com/" rel="bookmark">Fitur Wish List di Ekiosku.com</a>, <a title="Permalink ke Fitur Minimal Order dan Harga Grosir di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/24/fitur-minimal-order-dan-harga-grosir/" rel="bookmark">Fitur Minimal Order dan Harga Grosir di Ekiosku.com</a>, <a title="Permalink ke Website Ekiosku.com versi Mobile" href="http://budiseo.wordpress.com/2013/01/24/website-ekiosku-com-versi-mobile/" rel="bookmark">Website Ekiosku.com versi Mobile</a>, <a title="Permalink ke Hati-hati Penipuan Dalam Transaksi Online" href="http://budiseo.wordpress.com/2013/01/24/hati-hati-penipuan-dalam-transaksi-online/" rel="bookmark">Hati-hati Penipuan Dalam Transaksi Online</a>, <a title="Permalink ke Syarat dan Kondisi di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/26/syarat-dan-kondisi-di-ekiosku-com/" rel="bookmark">Syarat dan Kondisi di Ekiosku.com</a>, <a title="Permalink ke Alamat Kantor dan Tentang Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/28/alamat-kantor-dan-tentang-ekiosku-com/" rel="bookmark">Alamat Kantor dan Tentang Ekiosku.com</a>, <a title="Permalink ke Ekiosku.com Calon Jawara Toko Jual Beli Online" href="http://budiseo.wordpress.com/2013/01/28/ekiosku-com-calon-jawara-toko-jual-beli-online/" rel="bookmark">Ekiosku.com Calon Jawara Toko Jual Beli Online</a>, <a title="Permalink ke Tentang ekiosku.com" href="http://budiseo.wordpress.com/2013/01/30/tentang-ekiosku-com/" rel="bookmark">Tentang ekiosku.com</a>, <a title="Permalink ke Sekapur Sirih Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/30/sekapur-sirih-ekiosku-com/" rel="bookmark">Sekapur Sirih Ekiosku.com</a>, <a title="Permalink ke Cerita Awal Perjalanan Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/30/cerita-awal-perjalanan-ekiosku-com/" rel="bookmark">Cerita Awal Perjalanan Ekiosku.com</a>, <a title="Permalink ke Perkembangan Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/31/perkembangan-ekiosku-com/" rel="bookmark">Perkembangan Ekiosku.com</a>, <a title="Permalink ke Solusi Jual Beli Online" href="http://budiseo.wordpress.com/2013/01/31/solusi-jual-beli-online/" rel="bookmark">Solusi Jual Beli Online</a>, <a title="Permalink ke Cara Transaksi di Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/31/cara-transaksi-di-ekiosku-com/" rel="bookmark">Cara Transaksi di Ekiosku.com</a>, <a title="Permalink ke Cara Penggunaan Pin Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/31/cara-penggunaan-pin-ekiosku-com/" rel="bookmark">Cara Penggunaan Pin Ekiosku.com</a>, <a title="Permalink ke EkiAds Ekiosku, Sistem Kerja, Tips dan Cara Beriklan" href="http://budiseo.wordpress.com/2013/01/31/ekiads-ekiosku-sistem-kerja-tips-dan-cara-beriklan/" rel="bookmark">EkiAds Ekiosku, Sistem Kerja, Tips dan Cara Beriklan</a>, <a title="Permalink ke Cara Penggunaan EkiPoin Ekiosku.com" href="http://budiseo.wordpress.com/2013/01/31/cara-penggunaan-ekipoin-ekiosku-com/" rel="bookmark">Cara Penggunaan EkiPoin Ekiosku.com</a>, <a href="http://budiseo.wordpress.com/2013/02/06/bank-mandiri-sebagai-rekening-bersama-ekiosku-com/">Bank Mandiri Sebagai Rekening Bersama Ekiosku.com</a>, <a title="Permalink ke Ekiosku.com jual beli online aman menyenangkan" href="http://budiseo.wordpress.com/2013/01/31/ekiosku-com-jual-beli-online-aman/" rel="bookmark">Ekiosku.com jual beli online aman menyenangkan</a>, <a href="http://www.lautanindonesia.com/blog/budisantoso/jual-beli">Ekiosku.com Toko Jual Beli Online</a>, <a href="http://ciputraentrepreneurship.com/blog/budisantoso/2013/01/ekiosku-com-jual-beli-online-aman-menyenangkan/">Ekiosku.com Toko Jual Beli Online</a>, <a href="http://open.salon.com/blog/budisantoso/2013/01/24/ekioskucom_jual_beli_online_aman_menyenangkan">Ekiosku.com Toko Jual Beli Online</a>, <a href="http://open.salon.com/blog/budisantoso/2013/01/25/ekioskucom_purchase_online_safe_fun">Ekiosku.com purchase online safe fun</a>, <a href="http://www.budisantoso.abatasa.com/post/detail/24548/ekioskucom-jual-beli-online-aman-menyenangkan.html">Ekiosku.com Toko Jual Beli Online</a></p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar budisantoso" title="Avatar budisantoso"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Budi</a></div><span class="date">6. Februari 2013 - 9:49</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>BARANG BUKTI BAHWA PRESIDEN RI SUSILO BAMBANG YUDHOYONO , WIRANTO, SURYAPALOH, MARTY NATALEGAWA, JOKO WIDODO, RUDIYATMO, DON BOSCO SALAMUN, DAIBAHTIAR, SUBAGYOHS, SUTANTO, INDRA J.PILIANG, AVIAN TUMENGKOL, RUHUT SITOMPUL, OC. KALIGIS, WIMAR WITOELAR, MEGAWATI SOEKARNO, MEUTYAHAFID CS ADALAH PEJABAT2 BAJINGAN LONTE NDLOGOG DAJJAL LAKNAT JAHANAM :</p>
+<p>* DATA OTENTIK SURAT2 FAXS + BUKTI KIRIMNYA, SEJAK TAHUN 2000 S.D 2008 KEPADA MABES POLRI &amp; KAPOLRI, MABES TNI, DEPHAN, DEPLU &amp; BEBEBRAPA KEMENTRIAN + KBRI, ISTANA PRESIDEN, BEBERAPA PEMPROV, GOLKAR, PKB + NU, HANURA, KPU, RCTI, SCTV, METRO TV, INDOSIAR, MEDIA INDONESIA, DARI LETKOL BOBBY MEIDIANTO ZULACHIR *JAMEZ.DEAN68 + <a href="http://WWW.SPYAGENT.YU.TL" title="WWW.SPYAGENT.YU.TL">WWW.SPYAGENT.YU.TL</a> *PANULARAN RT 001 / RW 007 LAWEYAN SURAKARTA, BELAKANG AKAR SARI* BESERTA CSNYA: DENSUS HARIMAU INDONESIA + KOPRAL INDONESIA* UNTUK URUSAN + TAKTIS PENUMPASAN GAM, PENUMPASAN TERORIS, PENANGGULANGAN BENCANA ALAM, BEBERAPA PERSOALAN KRIMINAL, PENYELAMATAN 4 TKI IRAK, PENYELAMATAN MEUTYA HAFID, PERBAIKAN KESRA, PENDIDIKAN, DAN SOSIAL POLITIK, MASIH ADA ! MASIH ADA! MASIH ADA!<br />
+* BUKTI CELANA DALAM MEUTYA HAFID PEMBERIAN MEUTYA HAFID KPD LETKOL BOBBY MEIDIANTO ZULACHIR *BUKTI KEDUANYA PERNAH BERHUBUNGAN INTIM SUAMI ISTRI* OKTOBER NOPEMBER 2007 MASIH ADA DAN DISIMPAN LETKOL BOBBY ZULACHIR ! MASIH ADA!<br />
+* BUKTI REKAMAN SUARA JANJI/NIKAH SIRI LETKOL BOBBY MEIDIANTO ZULACHIR DG MEUTYA HAFID DAN REKAMAN SUARA PERTENGKARAN LETKOL BOBBY DG SAUDARA + KERABAT MEUTYA HAFID *JANUARI 2008 MASIH ADA! MASIH ADA!<br />
+* BUKTI2 KETERLIBATAN WIRANTO, MEGAWATI SOEKARNO, PRESIDEN SBY, JOKOWIDODO, SURYAPALOH, SUBAGYO HS, DLL. PEJABAT2 DI ATAS DAN KELUARGA MEREKA TERLIBAT TIPIKOR, JARINGAN TERORIS, PROSTITUSI, KRIMINAL + PEMBUNUHAN *TERMASUK PEMBUNUHAN AKTIFIS KOMNAS HAM MASIH ADA! MASIH ADA!<br />
+* BUKTI REKAMAN VIDEO TANTANGAN CAROK KPD PEJABAT2 TSB DIATAS DI YOUTUBE.COM/BOBBYMEIDIANTO, TH.2009 DAN DITAMBAH SELEBARAN2NYA YG TERTEMPEL DI DKI, SOLO, DIY, SEMARANG, BANDUNG,  MASIH ADA!<br />
+* BUKTI REKAMAN SUARA PERTENGKARAN LETKOL BOBBY VS KELUARGA WIRANTO + SATPAM DAN PENEMBAKAN DG PELURU TAJAM KPD LETKOL BOBBY SEPTEMBER 2007 DI PALM KARTIKA JAKARTA MASIH ADA.</p>
+<p><a href="http://WWW.GOLKAR.OR.ID/BLOGS/KEMUNING" title="WWW.GOLKAR.OR.ID/BLOGS/KEMUNING">WWW.GOLKAR.OR.ID/BLOGS/KEMUNING</a> , <a href="http://WWW.GOLKAR.OR.ID/BLOGS/EMERALD" title="WWW.GOLKAR.OR.ID/BLOGS/EMERALD">WWW.GOLKAR.OR.ID/BLOGS/EMERALD</a> .<br />
+<a href="http://WWW.NEWSKOPRALINDO.YU.TL" title="WWW.NEWSKOPRALINDO.YU.TL">WWW.NEWSKOPRALINDO.YU.TL</a> , <a href="http://WWW.ANTARAQTA-NEWS.PUN.BZ" title="WWW.ANTARAQTA-NEWS.PUN.BZ">WWW.ANTARAQTA-NEWS.PUN.BZ</a> , <a href="http://WWW.TIMECRISIS.WORDPRESS.COM" title="WWW.TIMECRISIS.WORDPRESS.COM">WWW.TIMECRISIS.WORDPRESS.COM</a> , DLL.</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar kemuning" title="Avatar kemuning"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Chix Cha</a></div><span class="date">5. Februari 2013 - 11:39</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>Maju terus. salam <a href="http://goo.gl/Gwrze">Gwrze</a></p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar salsabila" title="Avatar salsabila"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Salsabila</a></div><span class="date">5. Februari 2013 - 4:20</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>Salam buat Armen Saputra, Ketua PK Kecamatan Marpoyan Damai Pekanbaru. Moga Armen ke depan dapat makin eksis di Golkar. Saya sebagai sahabat selalu support Armen.</p>
+<p>Dan jika rekan-rekan ke pekanbaru dan butuh transportasi silahkan kunjungi <a href="http://www.rentalmobilpekanbaru.com" title="http://www.rentalmobilpekanbaru.com">http://www.rentalmobilpekanbaru.com</a></p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar adong" title="Avatar adong"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Adong</a></div><span class="date">4. Februari 2013 - 12:22</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>Sustainable Livelihood In Pusur Watersheed<br />
+Program ini lebih dikenal dengan SLIP yang dicanangkan oleh Danone Ecosysteme France, yang dalam pelaksanaannya menggandeng Bina Swadaya Konsultan. Program yang sudah berjalan sejak September 2010 dan hingga kini di tahun 2013 kira-kira hampir 29 bulan di wilayah Kabupaten Klaten dan Boyolali. Landasan dari program ini adalah Berkesinambungan Mata Pencaharian yang bersinergi dengan kelestarian alam yaitu Air. Danone Ecosysteme France sebagai salah satu institusi dari Danone Corporation mengambil inisiatif program ini, karena berkaitan dengan Danone Aqua yang salah satu tempat produksi air minum Aqua berada diwilayah Kab. Klaten sehingga sebagai salah satu bentuk tanggung jawab sosial perusahaan, Danone Aqua melakukan Program SLIP tersebut. Desa yang telah terdampingi yaitu 36 Desa (24 desa di Kab. Klaten dan 12 di Kab. Boyolali). Pendampingan yang kita lakukan sasarannya adalah Kelompok Swadaya Masyarakat yang ditingkat desa lebih dikenal Kelompok Tani/Kelompok Wanita Tani.<br />
+Aspek-aspek yang kita dampingi adalah; 1. aspek keorganisasian kelompok, 2. aspek pertanian ramah lingkungan, dan 3. aspek potensi lokal yg ada di masyarakat. Dengan tujuan apabila ke 3 aspek tersebut dilakukan mudah2 an ada peningkatan pendapatan dimasyarakat. to be continued..........</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/picture-2477.jpg" alt="Avatar Amirul" title="Avatar Amirul"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Amirul Nurman</a></div><span class="date">4. Februari 2013 - 9:15</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>Indah dengan kebersamaan. Bersatu padu hadapi tantangan rintangan. Bersatu menuju Indonesia yang lebih baik salam dari <a title="Ekiosku.com jual beli online aman menyenangkan" href="http://www.qurban-aqiqah.com/ekiosku-com-jual-beli-online-aman.html"><strong><em>Ekiosku.com jual beli online aman menyenangkan</em></strong></a>, <a href="http://www.qurban-aqiqah.com/ekiosku-com-purchase-online-safe-fun.html">Ekiosku.com purchase online safe fun</a>, <a href="http://budiseo.wordpress.com/2013/01/22/ekiosku-com-jual-beli-online-aman-menyenangkan/">Ekiosku.com jual beli online aman menyenangkan</a>, <a href="http://budiseo.wordpress.com/">Budi Santoso</a>, <a title="Ekiosku.com jual beli online aman menyenangkan" href="http://budiseo.wordpress.com/2013/01/31/ekiosku-com-jual-beli-online-aman/">Ekiosku.com jual beli online aman menyenangkan</a></p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar budisantoso" title="Avatar budisantoso"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Budi</a></div><span class="date">4. Februari 2013 - 9:03</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>Future Public Transport, not Impossible for DKI Jakarta - Please think about it.<br />
+URL 1 : <a href="http://www.youtube.com/watch?v=t1gTzc7-IbQ" title="http://www.youtube.com/watch?v=t1gTzc7-IbQ">http://www.youtube.com/watch?v=t1gTzc7-IbQ</a><br />
+URL 1 2 <a href="http://www.youtube.com/watch?v=Lh84x8pMiek" title="http://www.youtube.com/watch?v=Lh84x8pMiek">http://www.youtube.com/watch?v=Lh84x8pMiek</a></p>
+<p>Indonesia Maju TRUS</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar mich_patric" title="Avatar mich_patric"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Patricius Sendjojo</a></div><span class="date">4. Februari 2013 - 0:34</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>BERITA HEBOH! </p>
+<p>BUKTI2 KEBUSUKAN PRESIDEN SBY,WIRANTO,JOKOWI+RUDIYATMO,MEGAWATI,SURYAPALOH,INDRA J.PILIANG,DAIBAHTIAR,SUTANTO,MARTYNATALEGAWA,AVIAN+OZZY HASAN TUMENGKOL,SUBAGYO HS, MEUTYAHAFID CS PARA PEJABAT2 BAJINGAN LONTE DAJJAL LAKNAT JAHANAM .</p>
+<p>* BUKTI SURAT FAX+BUKTI PENGIRIMAN DARI LETKOL BOBBY MEIDIANTO ZULACHIR CS SEJAK TAHUN 2000 KPD PIHAK: MABES POLRI, MABES TNI, DEPHAN, DEPLU + BBRP KBRI, ISTANA NEGARA, GOLKAR, HANURA * TERMASUK COPY TERKIRIM KEPADA BEBERAPA PEJABAT DIATAS*, DAN KPD METRO TV, INDOSIAR, MEDIA INDONESIA, + BEBERAPA STA TEVE LAIN + LAMTOROGUNG, YG BERISI HAL2 TERKAIT TAKTIS &amp; SOAL PENUMPASAN GAM, PENUMPASAN TERORIS, PEMBERANTASAN KORUPSI, PENANGGULANGAN BENCANA, PENYELAMATAN 4 TKW DARI IRAK 2004, PENYELAMATAN MEUTYA HAFID 2005, BERITA DUKA CITA MENINGGALNYA IBU SRI RAHAYU IBUNDA LETKOL BOBBY MEIDIANTO ZULACHIR 2004, BERITA DUKA CITA MENINGGALNYA BAPAK ZULACHIR AYAHANDA LETKOL BOBBY, PEMBERITAHUAN RENCANA  PERNIKAHAN LETKOL BOBBY MEIDIANTO ZULACHIR + MEUTYA HAFID DES 2007+JANUARI 2008. MASIH ADA TERSIMPAN PADA LETKOL BOBBY MEIDIANTO ZULACHIR &amp; BEBERAPA PENGURUS YBPBIKM SOLO *KOPRAL INDONESIA*.  MASIH ADA!<br />
+* BARANG BUKTI CELANA DALAM MILIK MEUTYA HAFID + SEBUAH BENDA LAINNYA UNTUK LETKOL BOBBY MEIDIANTO ZULACHIR OKTOBER NOPEMBER 2007 MASIH ADA DISIMPAN LETKOL BOBBY MEIDIANTO ZULACHIR!<br />
+* BUKTI REKAMAN SUARA PERTENGKARAN LETKOL BOBBY MEIDIANTO ZULACHIR  VS SAUDARA+KERABAT MEUTYAHAFID DI LEBAK BULUS 2 JAKSEL JANUARI 2008. MASIH ADA!<br />
+* BUKTI REKAMAN SUARA PERTENGKARAN LETKOL BOBBY ZULACHIR VS ANAK+SATPAM2 WIRANTO DAN PENEMBAKAN LETKOL BOBBY DI PALM KARTIKA JAKARTA MASIH ADA!<br />
+* BUKTI BERITA FITNAH DARI SUARA MERDEKA, INILAH.COM, KAPANLAGI, DETIKNEWS, WASPADA ONLINE OKTOBER 2008 YG BERAKIBAT MENINGGALNYA ZULACHIR AYAHANDA LETKOL BOBBY MASIH ADA!<br />
+* BUKTI2 POSTING BERITA RENCANA NIKAH + PERNIKAHAN SIRI LETKOL BOBBY MEIDIANTO ZULACHIR DG MEUTYA HAFID JANUARI 2008 YG*DITULIS SEKITAR FEBRUARI S.D APRIL 2008* MASIH ADA!<br />
+* BUKTI REKAMAN VIDEO TANTANGAN CAROL LETKOL BOBBY MEIDIANTO ZULACHIR KPD SBY,WIRANTO,SURYAPALOH,AVIAN TUMENGKOL,KELUARGA MEUTYAHAFID, KELUARGA SUBAGYO HS, DI YOUTUBE.COM/BOBBYMEIDIANTO TH.2009  MASIH ADA!<br />
+* BUKTI2 KETERLIBATAN SURYAPALOH, MEGAWATI, PDIPERJUANGAN, JUGA SBY+ WIRANTO+ DAIBAHTIAR DG JARINGAN GAM, JAMAAH ISLAMIYAH, XANANA GUSMAO, JUGA KELOMPOK2 SINDIKAT NARKOBA + PROSTITUSI DAN JUGA TERBUNUHNYA AKTIFIS KOMNAS HAM MUNIR MASIH ADA!<br />
+* BUKTI2 TINDAK KORUPSI MEGAWATI SOEKARNO DLM KASUS SUKHOI + HELI, DAN PERTAMINA 2001 S.D 2003 MASIH ADA!<br />
+* BUKTI FOTO2 DAN REKAMAN VIDEO BEBERAPA PEJABAT BAJINGAN BUSUK DIATAS SAAT BERZINA DG MEUTYAHAFID *TERKIRIM PADA KAMI DES 2007 + JANUARI 2008  MASIH ADA!</p>
+<p>DIATAS ADALAH BUKTI2 YG KAMI UNGKAP YG BERUSAHA DIHILANGKAN, JUGA BERITA2 KAMI INI OLEH KOMPLOTAN PEJABAT2 BAJINGAN DAJJAL LAKNAT JAHANAM TSB DIATAS. </p>
+<p>BERITA LAIN: </p>
+<p>SAUDARA2 TIRI LETKOL BOBBY MEIDIANTO ZULACHIR ANTARA LAIN : </p>
+<p>DEVI RAHYUANTO ALIAS KETUK MANTAN PELATIH RENANG ESG JAYA SOLO, MASTUTI WAHYUNING ZULACHIR *IBU TIRI*, TAUFIK KELANA ZULACHIR, ROHMALI ZULTAN ZULACHIR, HARTONO SINGGIH BEACUKAI PRIOK JAKARTA, DAN NUGROHO WARTAWAN KOMPAS , KAMI KOPRAL INDONESIA + LETKOL BOBBY MEIDIANTO NYATAKAN SBG MUSUH YG TELAH JUGA DIAM2 MAUPUN TERANG2AN IKUT TERLIBAT DALAM MEMBUAT FITNAH, TEROR DAN USAHA PEMBUNUHAN YG DIPERBUAT OLEH PEJABAT2 BUSUK DIATAS. DAN JUGA TELAH MENYERAKAHI  WARISAN ORANGTUA MEREKA YG JADI HAK LETKOL BOBBY MEIDIANTO ZULACHIR!  </p>
+<p>*BERITA TAMBAHAN: </p>
+<p>PANJI ARDHANARESPATI PUTRA PERTAMA LETKOL BOBBY MEIDIANTO ZULACHIR, YG PERNAH DIBANTU BIAYA PENDIDIKANNYA OLEH GNOTA, DAN BAPAK SRI SULTAN HAMENGKU BUWONO X, KINI TELAH LULUS S1 DESEMBER 2012. DAN DAPAT PEKERJAAN TETAP.<br />
+DAN YANG HEBAT LAGI, KINI BELI SEPEDA MOTOR BARU ATAS USAHA SENDIRI SEKALIPUN MASIH DG CARA KREDIT!</p>
+<p>*SEBAGIAN BERITA DIATAS DAPAT ANDA BACA DI: </p>
+<p><a href="http://WWW.GOLKAR.OR.ID/BLOGS/KEMUNING" title="WWW.GOLKAR.OR.ID/BLOGS/KEMUNING">WWW.GOLKAR.OR.ID/BLOGS/KEMUNING</a>, <a href="http://WWW.GOLKAR.OR.ID/BLOGS/EMERALD" title="WWW.GOLKAR.OR.ID/BLOGS/EMERALD">WWW.GOLKAR.OR.ID/BLOGS/EMERALD</a><br />
+<a href="http://WWW.TIMECRISIS.WORDPRESS.COM" title="WWW.TIMECRISIS.WORDPRESS.COM">WWW.TIMECRISIS.WORDPRESS.COM</a>, <a href="http://WWW.GALABASUKI.YU.TL" title="WWW.GALABASUKI.YU.TL">WWW.GALABASUKI.YU.TL</a> , <a href="http://WWW.ANTARAQTA-NEWS.PUN.BZ" title="WWW.ANTARAQTA-NEWS.PUN.BZ">WWW.ANTARAQTA-NEWS.PUN.BZ</a>, <a href="http://WWW.NEWSKOPRALINDO.YU.TL" title="WWW.NEWSKOPRALINDO.YU.TL">WWW.NEWSKOPRALINDO.YU.TL</a>,<br />
+DLL. LIHAT DI BLOG KAMI N DIATAS.</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/picture-2267.jpg" alt="Avatar emerald" title="Avatar emerald"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">S. Haryadi</a></div><span class="date">1. Februari 2013 - 17:19</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>BERITA HEBOH! </p>
+<p>BUKTI2 KEBUSUKAN PRESIDEN SBY,WIRANTO,JOKOWI+RUDIYATMO,MEGAWATI,SURYAPALOH,INDRA J.PILIANG,DAIBAHTIAR,SUTANTO,MARTYNATALEGAWA,AVIAN+OZZY HASAN TUMENGKOL,SUBAGYO HS, MEUTYAHAFID CS PARA PEJABAT2 BAJINGAN LONTE DAJJAL LAKNAT JAHANAM .</p>
+<p>* BUKTI SURAT FAX+BUKTI PENGIRIMAN DARI LETKOL BOBBY MEIDIANTO ZULACHIR CS SEJAK TAHUN 2000 KPD PIHAK: MABES POLRI, MABES TNI, DEPHAN, DEPLU + BBRP KBRI, ISTANA NEGARA, GOLKAR, HANURA * TERMASUK COPY TERKIRIM KEPADA BEBERAPA PEJABAT DIATAS*, DAN KPD METRO TV, INDOSIAR, MEDIA INDONESIA, + BEBERAPA STA TEVE LAIN + LAMTOROGUNG, YG BERISI HAL2 TERKAIT TAKTIS &amp; SOAL PENUMPASAN GAM, PENUMPASAN TERORIS, PEMBERANTASAN KORUPSI, PENANGGULANGAN BENCANA, PENYELAMATAN 4 TKW DARI IRAK 2004, PENYELAMATAN MEUTYA HAFID 2005, BERITA DUKA CITA MENINGGALNYA IBU SRI RAHAYU IBUNDA LETKOL BOBBY MEIDIANTO ZULACHIR 2004, BERITA DUKA CITA MENINGGALNYA BAPAK ZULACHIR AYAHANDA LETKOL BOBBY, PEMBERITAHUAN RENCANA  PERNIKAHAN LETKOL BOBBY MEIDIANTO ZULACHIR + MEUTYA HAFID DES 2007+JANUARI 2008. MASIH ADA TERSIMPAN PADA LETKOL BOBBY MEIDIANTO ZULACHIR &amp; BEBERAPA PENGURUS YBPBIKM SOLO *KOPRAL INDONESIA*.  MASIH ADA!<br />
+* BARANG BUKTI CELANA DALAM MILIK MEUTYA HAFID + SEBUAH BENDA LAINNYA UNTUK LETKOL BOBBY MEIDIANTO ZULACHIR OKTOBER NOPEMBER 2007 MASIH ADA DISIMPAN LETKOL BOBBY MEIDIANTO ZULACHIR!<br />
+* BUKTI REKAMAN SUARA PERTENGKARAN LETKOL BOBBY MEIDIANTO ZULACHIR  VS SAUDARA+KERABAT MEUTYAHAFID DI LEBAK BULUS 2 JAKSEL JANUARI 2008. MASIH ADA!<br />
+* BUKTI REKAMAN SUARA PERTENGKARAN LETKOL BOBBY ZULACHIR VS ANAK+SATPAM2 WIRANTO DAN PENEMBAKAN LETKOL BOBBY DI PALM KARTIKA JAKARTA MASIH ADA!<br />
+* BUKTI BERITA FITNAH DARI SUARA MERDEKA, INILAH.COM, KAPANLAGI, DETIKNEWS, WASPADA ONLINE OKTOBER 2008 YG BERAKIBAT MENINGGALNYA ZULACHIR AYAHANDA LETKOL BOBBY MASIH ADA!<br />
+* BUKTI2 POSTING BERITA RENCANA NIKAH + PERNIKAHAN SIRI LETKOL BOBBY MEIDIANTO ZULACHIR DG MEUTYA HAFID JANUARI 2008 YG*DITULIS SEKITAR FEBRUARI S.D APRIL 2008* MASIH ADA!<br />
+* BUKTI REKAMAN VIDEO TANTANGAN CAROL LETKOL BOBBY MEIDIANTO ZULACHIR KPD SBY,WIRANTO,SURYAPALOH,AVIAN TUMENGKOL,KELUARGA MEUTYAHAFID, KELUARGA SUBAGYO HS, DI YOUTUBE.COM/BOBBYMEIDIANTO TH.2009  MASIH ADA!<br />
+* BUKTI2 KETERLIBATAN SURYAPALOH, MEGAWATI, PDIPERJUANGAN, JUGA SBY+ WIRANTO+ DAIBAHTIAR DG JARINGAN GAM, JAMAAH ISLAMIYAH, XANANA GUSMAO, JUGA KELOMPOK2 SINDIKAT NARKOBA + PROSTITUSI DAN JUGA TERBUNUHNYA AKTIFIS KOMNAS HAM MUNIR MASIH ADA!<br />
+* BUKTI2 TINDAK KORUPSI MEGAWATI SOEKARNO DLM KASUS SUKHOI + HELI, DAN PERTAMINA 2001 S.D 2003 MASIH ADA!<br />
+* BUKTI FOTO2 DAN REKAMAN VIDEO BEBERAPA PEJABAT BAJINGAN BUSUK DIATAS SAAT BERZINA DG MEUTYAHAFID *TERKIRIM PADA KAMI DES 2007 + JANUARI 2008  MASIH ADA!</p>
+<p>DIATAS ADALAH BUKTI2 YG KAMI UNGKAP YG BERUSAHA DIHILANGKAN, JUGA BERITA2 KAMI INI OLEH KOMPLOTAN PEJABAT2 BAJINGAN DAJJAL LAKNAT JAHANAM TSB DIATAS. </p>
+<p>BERITA LAIN: </p>
+<p>SAUDARA2 TIRI LETKOL BOBBY MEIDIANTO ZULACHIR ANTARA LAIN : </p>
+<p>DEVI RAHYUANTO ALIAS KETUK MANTAN PELATIH RENANG ESG JAYA SOLO, MASTUTI WAHYUNING ZULACHIR *IBU TIRI*, TAUFIK KELANA ZULACHIR, ROHMALI ZULTAN ZULACHIR, HARTONO SINGGIH BEACUKAI PRIOK JAKARTA, DAN NUGROHO WARTAWAN KOMPAS , KAMI KOPRAL INDONESIA + LETKOL BOBBY MEIDIANTO NYATAKAN SBG MUSUH YG TELAH JUGA DIAM2 MAUPUN TERANG2AN IKUT TERLIBAT DALAM MEMBUAT FITNAH, TEROR DAN USAHA PEMBUNUHAN YG DIPERBUAT OLEH PEJABAT2 BUSUK DIATAS. DAN JUGA TELAH MENYERAKAHI  WARISAN ORANGTUA MEREKA YG JADI HAK LETKOL BOBBY MEIDIANTO ZULACHIR!  </p>
+<p>*BERITA TAMBAHAN: </p>
+<p>PANJI ARDHANARESPATI PUTRA PERTAMA LETKOL BOBBY MEIDIANTO ZULACHIR, YG PERNAH DIBANTU BIAYA PENDIDIKANNYA OLEH GNOTA, DAN BAPAK SRI SULTAN HAMENGKU BUWONO X, KINI TELAH LULUS S1 DESEMBER 2012. DAN DAPAT PEKERJAAN TETAP.<br />
+DAN YANG HEBAT LAGI, KINI BELI SEPEDA MOTOR BARU ATAS USAHA SENDIRI SEKALIPUN MASIH DG CARA KREDIT!</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/picture-2267.jpg" alt="Avatar emerald" title="Avatar emerald"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">S. Haryadi</a></div><span class="date">1. Februari 2013 - 17:16</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p><a href="http://diooda.blogspot.com/2012/12/kata-kata-cinta.html">kata kata cinta</a><br />
+<a href="http://diooda.blogspot.com/2012/12/kata-kata-mutiara.html">kata kata mutiara indah</a><br />
+<a href="http://diooda.blogspot.com/2012/12/kata-kata-gombal.html">kata kata gombal</a><br />
+<a href="http://diooda.blogspot.com/2012/12/kata-kata-bijak.html">kata kata bijak</a><br />
+<a href="http://diooda.blogspot.com/2013/01/gombalan-cinta-terbaru-2013.html">gombalan cinta</a><br />
+<a href="http://diooda.blogspot.com/2013/01/kata-kata-romantis-terbaru-2013.html">kata kata romantis</a><br />
+<a href="http://diooda.blogspot.com/2013/01/cerpen-islami-terbaru-2013.html">cerpen islami</a><br />
+<a href="http://diooda.blogspot.com/2013/01/gombalan-romantis-terbaru-2013.html">gombalan romantis</a><br />
+<a href="http://diooda.blogspot.com/2013/01/kata-kata-gombal-terbaru-2013.html">kata kata gombal</a><br />
+<a href="http://diooda.blogspot.com/2013/01/gombalan-lucu-terbaru-2013.html">gombalan lucu</a><br />
+<a href="http://diooda.blogspot.com/2013/01/gombalan-raja-gombal-terbaru-2013.html">raja gombal</a><br />
+<a href="http://diooda.blogspot.com/2013/01/kata-gombal-terbaru-2013.html">kata kata gombal</a><br />
+<a href="http://diooda.blogspot.com/2013/01/puisi-cinta-untuk-kekasih.html">puisi cinta</a><br />
+<a href="http://diooda.blogspot.com/2012/12/kata-kata-lucu.html">kata kata lucu</a><br />
+<a href="http://diooda.blogspot.com/2013/01/kata-kata-romantis-buat-pacar.html">kata kata romantis</a></p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar diooda" title="Avatar diooda"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">diooda</a></div><span class="date">1. Februari 2013 - 13:56</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>Indah dengan kebersamaan. Bersatu padu hadapi tantangan rintangan. Bersatu menuju Indonesia yang lebih baik salam dari <a title="Ekiosku.com jual beli online aman menyenangkan" href="http://www.qurban-aqiqah.com/ekiosku-com-jual-beli-online-aman.html"><strong><em>Ekiosku.com jual beli online aman menyenangkan</em></strong></a>, <a href="http://budiseo.wordpress.com/2013/01/22/ekiosku-com-jual-beli-online-aman-menyenangkan/">Ekiosku.com jual beli online aman menyenangkan</a>, <a href="http://budiseo.wordpress.com/">Budi Santoso</a>, <a title="Ekiosku.com jual beli online aman menyenangkan" href="http://budiseo.wordpress.com/2013/01/31/ekiosku-com-jual-beli-online-aman/">Ekiosku.com jual beli online aman menyenangkan</a>.</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar budisantoso" title="Avatar budisantoso"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Budi</a></div><span class="date">1. Februari 2013 - 7:48</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>Semoga Indonesia semakin baik Agar Kita semua bisa merasa <a href="http://adheens-san.blogspot.com/2013/01/ekiosku-com-jual-beli-online-aman-menyenangkan.html">Aman Menyenangkan</a> di Negeri sendiri... Salam dari <a href="http://adheens-san.blogspot.com/2013/01/ekiosku-com-jual-beli-online-aman-menyenangkan.html">Ekiosku.com Jual Beli Online Aman Menyenangkan</a></p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar adheens" title="Avatar adheens"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Adheens San</a></div><span class="date">31. Januari 2013 - 20:26</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>Golkar makin mantab.<br />
+Terima kasih karena saya diizinkan untuk bergabung dengan golkar.<br />
+Blog saya <a href="http://golkar.or.id/blogs/erwinthedevil">http://golkar.or.id/blogs/erwinthedevil</a><br />
+<a href="http://blog.uin-malang.ac.id/beritaterbaru/ekiosku-com-jual-beli-online-aman-menyenangkan/">Ekiosku.com jual beli online aman menyenangkan</a><br />
+<a href="http://golkar.or.id/blog/ekioskucom-jual-beli-online-aman-menyenangkan-19">Ekiosku.com jual beli online aman menyenangkan</a><br />
+<a href="http://www.ciputraentrepreneurship.com/blog/erwinthedevil/2013/01/ekiosku-com-jual-beli-online-aman-menyenangkan/">Ekiosku.com jual beli online aman menyenangkan</a><br />
+<a href="http://trac.filezilla-project.org/ticket/8443">Ekiosku.com jual beli online aman menyenangkan</a></p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar erwinthedevil" title="Avatar erwinthedevil"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Erwin Pratama</a></div><span class="date">31. Januari 2013 - 0:30</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>makin sukses denga partai golkarnya</p>
+<p><a href="http://mobinesia.blogspot.com/2013/01/ekioskucom-jual-beli-online-aman.html">Ekiosku.com jual beli online aman menyenangkan</a><br />
+<a href="http://demo.oxwall.org/link/283">Ekiosku.com jual beli online aman menyenangkan</a></p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar erwinthedevil" title="Avatar erwinthedevil"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Erwin Pratama</a></div><span class="date">30. Januari 2013 - 22:39</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>PENJELASAN SENGKETA LETKOL BOBBY MEIDIANTO ZULACHIR VERSUS SAUDARA2 TIRINYA. </p>
+<p>* SAUDARA TIRI LETKOL BOBBY ZULACHIR YG TERLIBAT: DEVI RAHYUANTO *KETUK* MANTAN PELATIH ESG JAYA SOLO, KETUA PRSI KONI SOLO, SAHABAT GUSTI KGPH. DIPOKUSUMO, SAHABAT KANJENG SINUHUN PB XIII, SAHABAT KANJENG SINUHUN  SRI MANGKUNEGARA IX. KETUK TSB ADALAH PUTRA SUAMI PERTAMA NY. SRI RAHAYU IBUNDA LETKOL BOBBY MEIDIANTO ZULACHIR.<br />
+MASTUTI WAHYUNING ZULACHIR *IBU TIRI LETKOL BOBBY* ISTRI KEDUA BAPAK ZULACHIR, DAN KEDUA ANAK LAKI2 KANDUNGNYA YAITU: TAUFIK KELANA ZULACHIR DAN ROHMALI ZULTAN ZULACHIR BERSAMA KAKAK KANDUNG NING ZULACHIR YAITU: NUGROHO WARTAWAN KOMPAS JAKARTA *MENINGGAL 2011?* DAN HARTONO SINGGIH BEA CUKAI PRIOK JAKARTA.</p>
+<p>DALAM HAL INI PARA SAUDARA TIRI LETKOL BOBBY TSB DIATAS KAMI KETAHUI TERLIBAT DALAM BEBERAPA UPAYA TEROR &amp; PEMBUNUHAN DARI SINDIKAT PEJABAT2 BUSUK LAWAN2 LETKOL BOBBY ZULACHIR DAN KAMI, JUGA DALAM SENGKETA MASALAH WARISAN ZULACHIR YG JADI HAK LETKOL BOBBY, DAN SOAL RUMAH PENINGGALAN R.NG. SETIJO SOEDJONO, NY. SRI RAHAYU, &amp; NY. IR.HJ. SRI SEDJATI PRADIPTO, YG KINI MASING2 DIKUASAI &amp; DI SERAKAHI OLEH SAUDARA2 TIRI LETKOL BOBBY MEIDIANTO TSB DIATAS. DAN LETKOL BOBBY ZULACHIR SBG PUTRA TUNGGAL BAPAK ZULACHIR &amp; IBU SRI RAHAYU SAMA SEKALI TIDAK DIBERI APA YG JADI HAKNYA.<br />
+DAN MALAH DIFITNAH DIMANA MANA OLEH SAUDARA2 TIRINYA TSB DAN KAWAN2 MEREKA YG JUGA SEBAGIAN ADALAH PEJABAT DAN ORANG2 MASSMEDIA SERTA BRANDALAN KRIMINAL YG JUGA KEBETULAN ADALAH MUSUH DENSUS HARIMAU INDONESIA, MUSUH LETKOL BOBBY, DAN MUSUH KOPRAL INDONESIA. </p>
+<p>DEMIKIAN JUGA DG PEMBERITAAN DI SUARA MERDEKA, INILAH.COM, DETIKNEWS, WASPADA ONLINE YANG MENDISKREDITKAN LETKOL BOBBY MEIDIANTO ZULACHIR DAN MENYEBABKAN KEMATIAN BAPAK ZULACHIR AYAH LETKOL BOBBY DAN MENCORENG PULA NAMA BAIK TUAN GURU / KYAHI HAJI MUHAMMAD NAJMUDDIN, DARUL MUHAJIRIN PRAYA NTB KAKEK ANGKAT LETKOL BOBBY.   </p>
+<p>PARA SAUDARA TIRI LETKOL BOBBY TSB BAIK KAKAK MAUPUN ADIK TIRINYA MEMILIKI CATATAN KEPOLISIAN &amp; / KRIMINAL TERMASUK PKASUS NARKOBA DAN PENIPUAN.<br />
+DAN HARTONO SINGGIH DALAM PENYELIDIKAN DUGAAN TERLIBAT KKN DI KALANGAN BEA CUKAI. LALU ROHMALI ZULTAN JUGA ADALAH BURONAN KEPOLISIAN ATAS TUDUHAN MENYURUH ORANG LAIN UNTUK MEMBUNUH LETKOL BOBBY *2011*. </p>
+<p>KAMI SENGAJA TULIS INI SEKALI LAGI, AGAR JELAS BAHWA KAMI TIDAK AKAN PERNAH MEMBERI HATI / BELAS KASIHAN KEPADA ORANG2 BUSUK. </p>
+<p>ANDA SEMUA SETUJU ATAU TIDAK KAMI TAK PEDULI.</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar kemuning" title="Avatar kemuning"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Chix Cha</a></div><span class="date">30. Januari 2013 - 17:34</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>BACA JUGA TULISAN2 TERBARU DI:<br />
+<a href="http://WWW.GOLKAR.OR.ID/BLOGS/KEMUNING" title="WWW.GOLKAR.OR.ID/BLOGS/KEMUNING">WWW.GOLKAR.OR.ID/BLOGS/KEMUNING</a><br />
+<a href="http://WWW.GOLKAR.OR.ID/BLOGS/EMERALD" title="WWW.GOLKAR.OR.ID/BLOGS/EMERALD">WWW.GOLKAR.OR.ID/BLOGS/EMERALD</a><br />
+<a href="http://WWW.BAHANA-SMPS.YU.TL" title="WWW.BAHANA-SMPS.YU.TL">WWW.BAHANA-SMPS.YU.TL</a><br />
+<a href="http://WWW.NEWSKOPRALINDO.YU.TL" title="WWW.NEWSKOPRALINDO.YU.TL">WWW.NEWSKOPRALINDO.YU.TL</a><br />
+<a href="http://WWW.ANTARAQTA-NEWS.PUN.BZ" title="WWW.ANTARAQTA-NEWS.PUN.BZ">WWW.ANTARAQTA-NEWS.PUN.BZ</a> , <a href="http://WWW.GALABASUKI.YU.TL" title="WWW.GALABASUKI.YU.TL">WWW.GALABASUKI.YU.TL</a> ,<br />
+<a href="http://WWW.AMEDYAPROMO.WEBS.COM" title="WWW.AMEDYAPROMO.WEBS.COM">WWW.AMEDYAPROMO.WEBS.COM</a><br />
+<a href="http://WWW.TEAMCRUSEQ.WORDPRESS.COM" title="WWW.TEAMCRUSEQ.WORDPRESS.COM">WWW.TEAMCRUSEQ.WORDPRESS.COM</a><br />
+<a href="http://WWW.GSLBUKS.YU.TL" title="WWW.GSLBUKS.YU.TL">WWW.GSLBUKS.YU.TL</a><br />
+<a href="http://WWW.WARWEBS.WORDPRESS.COM" title="WWW.WARWEBS.WORDPRESS.COM">WWW.WARWEBS.WORDPRESS.COM</a>,<br />
+<a href="http://WWW.ANTISBY.WORDPRESS.COM" title="WWW.ANTISBY.WORDPRESS.COM">WWW.ANTISBY.WORDPRESS.COM</a>,<br />
+<a href="http://WWW.FB.COM/AZRIEL.DBOY" title="WWW.FB.COM/AZRIEL.DBOY">WWW.FB.COM/AZRIEL.DBOY</a><br />
+<a href="http://WWW.FB.COM/DMEIYER" title="WWW.FB.COM/DMEIYER">WWW.FB.COM/DMEIYER</a><br />
+<a href="http://WWW.FB.COM/MAZ.TRIXZ" title="WWW.FB.COM/MAZ.TRIXZ">WWW.FB.COM/MAZ.TRIXZ</a><br />
+<a href="http://WWW.FB.COM/INYONK.IPIN" title="WWW.FB.COM/INYONK.IPIN">WWW.FB.COM/INYONK.IPIN</a><br />
+<a href="http://WWW.FB.COM/ALYYAF.ZANIP" title="WWW.FB.COM/ALYYAF.ZANIP">WWW.FB.COM/ALYYAF.ZANIP</a><br />
+<a href="http://WWW.FB.COM/JAMEZ.DEAN68" title="WWW.FB.COM/JAMEZ.DEAN68">WWW.FB.COM/JAMEZ.DEAN68</a><br />
+DLL GROUP KOPRAL INDONESIA + DENSUS HARIMAU INDONESIA . </p>
+<p>PERANG MELAWAN DAJJAL , JUDUL BUKU KARYA LETKOL BOBBY MEIDIANTO TERMASUK BUKU YG LARIS!<br />
+AUSTRALIAN JURNALISTIQUE AWARDS TAK LEBIH DARI PEMBERIAN KATA KASIHAN DAN BELA SUNGKAWA TERHADAP PARA JURNALIS YG TERKENA MUSIBAH SAAT MELIPUT, BUKAN PADA PENGABDIAN ATAU KARYA BESARNYA.</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar kemuning" title="Avatar kemuning"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Chix Cha</a></div><span class="date">30. Januari 2013 - 13:29</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>BUKTI2 MASIH ADA PADA LETKOL BOBBY MEIDIANTO ZULACHIR. KALIAN TUTUPI MACAM BAGAIMANA PULA, KAMI KAN TETAP TERUS UNGKAPKAN DAN BERITAKAN! </p>
+<p>BUKTI2 SURAT2 FAX TERKIRIM SEJAK TH.2000 S.D 2009 KEPADA KAPOLRI, MABES TNI, DEPHANKAM, DEPLU, ISTANA NEGARA DAN BEBERAPA KBRI SERTA PEMERINTAH PROVINSI + DAERAH, INDOSIAR, METRO TV, MEDIA INDONESIA DLL., GOLKAR + HANURA, DALAM URUSAN KEAMANAN NEGARA, REFERENDUM TIMOR LESTE, PENUMPASAN GAM, PENANGGULANGAN BENCANA ALAM, KESRA, DAN PENDIDIKAN, DAN PEMBEBASAN 4 TKW 2004 IRAK SERTA MEUTYA HAFID 2005 IRAK , KASUS MUNIR, DARI LETKOL BOBBY MEIDIANTO ZULACHIR * FB.COM/JAMEZ.DEAN68 + <a href="http://WWW.SPYAGENT.YU.TL" title="WWW.SPYAGENT.YU.TL">WWW.SPYAGENT.YU.TL</a> * D/A. PANULARAN RT 001 / RW 007 LAWEYAN SOLO BELAKANG JAMU AKARSARI PANULARAN. MASIH ADA!<br />
+BUKTI2 PERTEMUAN &amp; PERNIKAHAN SIRRI MEUTYA HAFID DG LETKOL BOBBY MEIDIANTO ZULACHIR, BUKTI KENANGAN BERUPA CELANA DALAM MEUTYA HAFID PUTRI HAJI ANWAR HAFID LEBAK BULUS JAKSEL, DAN BENDA LAINNYA LAGI, SERTA REKAMAN SUARA PERTENGKARAN LETKOL BOBBY MEIDIANTO ZULACHIR VS SAUDARA /KERABAT MEUTYA HAFID JANUARI 2008 MASIH ADA!<br />
+BUKTI REKAMAN SUARA PERTENGKARAN LETKOL BOBBY MEIDIANTO ZULACHIR VS KELUARGA + SATPAM WIRANTO + PENEMBAKAN LETKOL BOBBY DI RUMAH WIRANTO PALM KARTIKA JAKARTA MASIH ADA!<br />
+BUKTI2 PEMBERITAAN PERNIKAHAN LETKOL BOBBY ZULACHIR DG MEUTYA HAFID VERSI LETKOL BOBBY CS ANTARA BULAN JANUARI~ APRIL 2008 *WEBSITE* MASIH ADA!<br />
+BUKTI2 FITNAH BUSUK THDP LETKOL BOBBY ZULACHIR DARI KORAN SUARA MERDEKA , SOLO POS, INILAH.COM, DETIKNEWS.COM, WASPADA ONLINE , MASIH ADA!<br />
+BUKTI2 KETERLIBATAN JENDRAL WIRANTO, BIN + JENDRAL2 HANURA + PDI PERJUANGAN + DEMOKRAT SKRG ATAS PEMBUNUHAN AKTIFIS HAM MUNIR MASIH ADA!<br />
+BUKTI2 KETERLIBATAN MEGAWATI SOEKARNO + PDI PERJUANGAN DLM KASUS KORUPSI SUKHOI + HELI, PERTAMINA * 2001 S.D 2003 * MASIH ADA!<br />
+BUKTI2 KETERLIBATAN MEGAWATI, HENDRO PRIYONO, SBY FAMILY, SURYA PALOH DG JARINGAN JAMAAH ISLAMIYAH, GAM, DAN KELOMPOK FALINTIL MASIH ADA!</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar kemuning" title="Avatar kemuning"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Chix Cha</a></div><span class="date">30. Januari 2013 - 13:16</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>Kenapa tidak orang kita kaya raya<br />
+Baik alamnya maupun manusianya<br />
+Dan ini yang kita pelajari sejak bayi<br />
+Hanya saja kita tak pandai mengolahnya<br />
+Oleh karena itu bebaskan biaya pendidikan<br />
+Biar kita pandai mengarungi samudera hidup<br />
+Biar kita tak mudah dibodohi dan ditipu<br />
+Oleh karena itu biarkan kami sehat<br />
+Agar mampu menjaga kedaulatan tanah air ini</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/picture-2477.jpg" alt="Avatar Amirul" title="Avatar Amirul"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Amirul Nurman</a></div><span class="date">29. Januari 2013 - 22:14</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content odd">
+<div id="top">&nbsp;</div><div id="left"><p>Mhn diinfokan setelah mendaftar kader Partai Golkar. Sekiranya dpt diikutsertakan dlm kegiatan2 Partai Golkar. Dan berhrp Partai Golkar sebagai jembatan sy kedpn menjd perwakilan rakyat. Tlng diinfokan : <a href="mailto:cek_kemala86@yahoo.com">cek_kemala86@yahoo.com</a>. Sy dukung ARB u/ menjd capres dan smg ARB sehat selalu serta Partai Golkar akn slalu jd Partai Ɣƍ mendengarkan aspirasi rakyat dibwh dan  mengakar kuat dihati rakyat.</p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/picture-2470.jpg" alt="Avatar cekenikomalasari" title="Avatar cekenikomalasari"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Cek Eni Komalasar...</a></div><span class="date">29. Januari 2013 - 18:46</span></div><div id="bottom">&nbsp;</div>
+</div>
+<div class="content even">
+<div id="top">&nbsp;</div><div id="left"><p>Golkar selalu <a href="http://adheens-san.blogspot.com/2013/01/bank-mandiri-bank-terbaik-di-indonesia.html">Mandiri</a> dan tetap yang <a href="http://adheens-san.blogspot.com/2013/01/bank-mandiri-bank-terbaik-di-indonesia.html">Terbaik di Indonesia</a></p>
+</div><br /><div id="right"><img src="http://www.golkar.or.id/files/imagecache/user_image_default/pictures/defaultprofile.jpg" alt="Avatar adheens" title="Avatar adheens"  /><br /><div class="user_title"><a href="/guestbooks" title="View guestbooks.">Adheens San</a></div><span class="date">28. Januari 2013 - 0:58</span></div><div id="bottom">&nbsp;</div>
+</div><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a href="/guestbook?page=1" title="Ke halaman 2" class="active">2</a></li>
+<li class="pager-item"><a href="/guestbook?page=2" title="Ke halaman 3" class="active">3</a></li>
+<li class="pager-item"><a href="/guestbook?page=3" title="Ke halaman 4" class="active">4</a></li>
+<li class="pager-item"><a href="/guestbook?page=4" title="Ke halaman 5" class="active">5</a></li>
+<li class="pager-item"><a href="/guestbook?page=5" title="Ke halaman 6" class="active">6</a></li>
+<li class="pager-item"><a href="/guestbook?page=6" title="Ke halaman 7" class="active">7</a></li>
+<li class="pager-item"><a href="/guestbook?page=7" title="Ke halaman 8" class="active">8</a></li>
+<li class="pager-item"><a href="/guestbook?page=8" title="Ke halaman 9" class="active">9</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="/guestbook?page=1" title="Ke halaman selanjutnya" class="active">selanjutnya ›</a></li>
+<li class="pager-last last"><a href="/guestbook?page=39" title="Ke halaman akhir" class="active">akhir »</a></li>
+</ul></div><div id="sendcomment"><div id="form"><form action="/guestbook"  accept-charset="UTF-8" method="post" id="guestbook-form-entry-form">
+<div><p class="links">&raquo; Anda harus login terlebih dahulu untuk memberi komentar.</p>
+</div></form>
+</div></div></div></div>
+						
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+		</div>
+					<div id="sidebar">
+			  <div id="block-block-1" class="block block-block">
+
+  
+  <div class="content">
+        <ul class="sidebar-menu">
+<li><a class="index index-brigadedigital" href="/brigade-digital">Brigade Digital</a></li>
+<li><a class="index index-kadergolkar" href="/pendaftaran">Kader GOLKAR</a></li>
+<li><a class="index index-fasilitas" href="/fasilitas">Fasilitas</a></li>
+<li><a class="index index-pers" href="/indeks/press-release">Pers</a></li>
+<li><a class="index index-acara" href="/acara">Acara</a></li>
+<li><a class="index index-fpgdpd1dpd2" href="/pages-tentang/1131">FPG DPD1/DPD2</a></li>
+</ul>
+  </div>
+
+</div>
+			</div>
+			  </div> <!-- /#main -->
+
+      		<!--div id="sidebar-right" class="sidebar"-->
+                  </div> <!-- /#sidebar-right -->
+      
+      <div id="footer" class="clear">
+                
+        <!-- added by agus -->
+        <div class="wrapper">
+          <img src="/sites/all/themes/framework/assets/img/text_golkar.jpg" alt="GOLKAR" />
+          <ul>
+            <li><a target="_blank" href="http://www.youtube.com/user/golkarmediacenter" class="social-youtube">Youtube</a></li>
+            <li><a target="_blank" href="http://www.facebook.com/profile.php?id=100000693341954" class="social-facebook">Facebook</a></li>
+            <li><a target="_blank" href="http://www.flickr.com/photos/45430711@N05/" class="social-flickr">Flickr</a></li>
+            <li><a target="_blank" href="http://www.myspace.com/partai-golkar" class="social-myspace">MySpace</a></li>
+            <li><a target="_blank" href="http://twitter.com/golkarku" class="social-twitter">Twitter</a></li>
+          </ul>
+          <p class="float-right text">
+            Copyright 2009 www.golkar.or.id
+          </p>
+        </div>
+        <!-- #added -->
+
+      </div> <!-- /#footer -->
+
+    </div> <!-- /.container -->
+    <!-- /layout -->
+
+  <div id="user_relationships_popup_form" class="user_relationships_ui_popup_form"></div><script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/swftools/onepixelout/onepixelout.js?s"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{var pageTracker = _gat._getTracker("UA-5643792-22");pageTracker._trackPageview();} catch(err) {}
+//--><!]]>
+</script>
+
+  </body>
+</html>
